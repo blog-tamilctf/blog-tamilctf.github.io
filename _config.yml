@@ -10,7 +10,7 @@ mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
-  name: TamilCTF # author name
+  # name: TamilCTF # author name
   bio: >- # tell to the world
     Writeups,blogs,resources and more
   username: tamilctf # general username
