@@ -1,7 +1,7 @@
 # Site settings
 title: TamilCTF # site title
 description: >- # site description
-  Writeups,blogs,resources and more
+  Team TamilCTF
 lang: en-US # default lang
 timezone: Asia/Jakarta # set your timezone
 image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
@@ -12,7 +12,7 @@ mode: dark # default theme "dark" | "light"
 author:
   # name: TamilCTF # author name
   bio: >- # tell to the world
-    Writeups,blogs,resources and more
+    Team TamilCTF
   username: tamilctf # general username
   github: blog-tamilctf # github username
   twitter: tamilctf # twitter username
