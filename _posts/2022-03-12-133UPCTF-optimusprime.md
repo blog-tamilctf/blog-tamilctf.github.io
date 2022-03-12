@@ -134,27 +134,6 @@ for x in range(1645628400,1645801200):
                 break
         except Exception as e:
                 pass
-┌──(kali㉿aidenpearce369)-[~/IntigritiCTF]
-└─$ cat solve.py          
-import time
-import string
-import random
-from datetime import datetime
-import zipfile
-length, letters = 32, string.ascii_letters
-for x in range(1645628400,1645801200):
-        random.seed(x)
-        result_str = ''.join(random.choice(letters) for i in range(length))
-        try:
-                file_name = 'flag.zip'
-                pswd = result_str
-                with zipfile.ZipFile(file_name) as file:
-                        file.extractall(pwd = bytes(pswd, 'utf-8'))
-                print("Successfully cracked!!")
-                print(datetime.fromtimestamp(x))
-                break
-        except Exception as e:
-                pass
 ```
 
 By running this script, we would get the flag
@@ -171,4 +150,5 @@ Successfully cracked!!
 ```
 
 Finally we get our flag ```1337UP{W3ll_1_n3v3r_th0ught_U_c0uuuuuuld_f1nd_m3_308240202}```
+    
     
