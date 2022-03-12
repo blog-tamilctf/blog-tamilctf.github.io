@@ -1,5 +1,5 @@
 ---
-title: Colophon
+title: TamilCTF
 permalink: /about/
 layout: page
 excerpt: TamilCTF team
