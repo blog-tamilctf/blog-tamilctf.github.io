@@ -1,1 +1,1 @@
-## visit our blog : https://blogs.tamilctf.com
+## visit our blog : https://blog-tamilctf.github.io/
