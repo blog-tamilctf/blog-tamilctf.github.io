@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.737323520239">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 2.4.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Liikt#1337</title>
+    <meta name="title" content="Liikt#1337">
+    <meta name="description" content="A walkthrough on misc challenge from 1337UP Live 2022" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://blogs.tamilctf.com/ctftime-writeups/1337up---intigrity/aiden/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blogs.tamilctf.com/ctftime-writeups/1337up---intigrity/aiden/">
+    <meta property="og:title" content="Liikt#1337">
+    <meta property="og:description" content="A walkthrough on misc challenge from 1337UP Live 2022">
+    <meta property="og:image" content="https://raw.githubusercontent.com/AidenPearce369/AidenPearce369.github.io/main/_posts/CTF/1337UP-Live-Pics/liikt-1.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://blogs.tamilctf.com/ctftime-writeups/1337up---intigrity/aiden/">
+    <meta property="twitter:title" content="Liikt#1337">
+    <meta property="twitter:description" content="A walkthrough on misc challenge from 1337UP Live 2022">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/AidenPearce369/AidenPearce369.github.io/main/_posts/CTF/1337UP-Live-Pics/liikt-1.png">
+
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../../../assets/img/logo.png" rel="icon" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.737323520239" rel="stylesheet" />
+
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.737323520239" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.737323520239" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=2.4.0.737323520239" defer></script>
+</head>
+<body>
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between grow pr-6 md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-2xl">
+                            <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../../../assets/img/logo.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../../../assets/img/logo.png">
+                            </span>
+                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">TamilCTF</span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Blogs</span>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../../members/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <path fill-rule="evenodd" d="M3.5 8a5.5 5.5 0 118.596 4.547 9.005 9.005 0 015.9 8.18.75.75 0 01-1.5.045 7.5 7.5 0 00-14.993 0 .75.75 0 01-1.499-.044 9.005 9.005 0 015.9-8.181A5.494 5.494 0 013.5 8zM9 4a4 4 0 100 8 4 4 0 000-8z"/><path d="M17.29 8c-.148 0-.292.01-.434.03a.75.75 0 11-.212-1.484 4.53 4.53 0 013.38 8.097 6.69 6.69 0 013.956 6.107.75.75 0 01-1.5 0 5.193 5.193 0 00-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0017.29 8z"/>
+                                        </g>
+                                    </svg>
+                                    <span>Members</span>
+                                </a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../../sessions/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <path fill-rule="evenodd" d="M1.75 4.5a.25.25 0 00-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 00.25-.25V4.75a.25.25 0 00-.25-.25H1.75zM0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0122.25 21H1.75A1.75 1.75 0 010 19.25V4.75z"/><path d="M9 15.584V8.416a.5.5 0 01.77-.42l5.576 3.583a.5.5 0 010 .842L9.77 16.005a.5.5 0 01-.77-.42z"/>
+                                        </g>
+                                    </svg>
+                                    <span>Sessions</span>
+                                </a>
+                            </li>
+        
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+        
+                            <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                            style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search" />
+                        </div>
+        
+                        <!-- Mobile search button mock -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placehokder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button mock -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+                </div>
+            
+                <div class="pl-6 mb-4 mt-1">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                            <nav>
+                                <ul class="flex flex-wrap justify-center items-center">
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../../members/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                <g fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M3.5 8a5.5 5.5 0 118.596 4.547 9.005 9.005 0 015.9 8.18.75.75 0 01-1.5.045 7.5 7.5 0 00-14.993 0 .75.75 0 01-1.499-.044 9.005 9.005 0 015.9-8.181A5.494 5.494 0 013.5 8zM9 4a4 4 0 100 8 4 4 0 000-8z"/><path d="M17.29 8c-.148 0-.292.01-.434.03a.75.75 0 11-.212-1.484 4.53 4.53 0 013.38 8.097 6.69 6.69 0 013.956 6.107.75.75 0 01-1.5 0 5.193 5.193 0 00-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0017.29 8z"/>
+                                                </g>
+                                            </svg>
+                                            <span>Members</span>
+                                        </a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../../sessions/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                <g fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M1.75 4.5a.25.25 0 00-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 00.25-.25V4.75a.25.25 0 00-.25-.25H1.75zM0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0122.25 21H1.75A1.75 1.75 0 010 19.25V4.75z"/><path d="M9 15.584V8.416a.5.5 0 01.77-.42l5.576 3.583a.5.5 0 010 .842L9.77 16.005a.5.5 0 01-.77-.42z"/>
+                                                </g>
+                                            </svg>
+                                            <span>Sessions</span>
+                                        </a>
+                                    </li>
+            
+                                </ul>
+                            </nav>
+                        </div>
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="grow min-w-0 px-6 md:px-16">
+                        <main class="relative pt-6 pb-16">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                
+                                <!-- Page content  -->
+<doc-anchor-target id="liikt1337" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#liikt1337">#</doc-anchor-trigger>
+        <span>Liikt#1337</span>
+    </h1>
+</doc-anchor-target>
+<div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
+    <div class="flex items-center">
+        <div>By</div>
+        <div class="ml-2 flex items-center">
+          <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
+            <svg width="2rem" height="2rem" xmlns="http://www.w3.org/2000/svg" fill="white"><g><rect width="2rem" height="1.7rem" fill="#c5c5c5"/><circle r="0.44rem" cy="0.83rem" cx="1rem"/><ellipse ry="0.96rem" rx="0.77rem" cy="2.15rem" cx="1rem"/></g></svg>
+          </div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">AidenPearce369</div>
+        </div>
+    </div>
+    <div class="mx-2">&#9679;</div>
+    <div>In&nbsp;</div>
+    <div><a href="../../../categories/1337up/">1337UP</a></div>
+    <div class="mx-2">&#9679;</div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2022-03-12</span></div>
+</div>
+
+<p>Here goes the challenge description</p>
+<p><figure class="content-center">
+    <img src="https://raw.githubusercontent.com/AidenPearce369/AidenPearce369.github.io/main/_posts/CTF/1337UP-Live-Pics/liikt-1.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>After downloading the zip file, extracting the contents using password</p>
+<p>Doing <code v-pre>strings</code> on it,</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-c"><code v-pre class="language-c">┌──(kali㉿aidenpearce369)-[~/IntigritiCTF/Liikt/Kali-Linux]
+└─$ cat * 2&gt;/dev/null | grep -a &quot;1337UP{&quot;
+flag1:&lt;-- START 1337UP{5530491e6c0b5159
+liikt:x:1001:1001:,,,:/home/liikt:/bin/bash� 1337UP{5530��
+flag1:&lt;-- START 1337UP{5530491e6c0b5159
+flag1:&lt;-- START 1337UP{5530491e6c0b5159
+flag1:&lt;-- START 1337UP{5530491e6c0b5159
+flag1:&lt;-- START 1337UP{5530491e6c0b5159</code></pre>
+</doc-codeblock></div>
+<p>Seems like we have found first part of the flag
+It is a memory image &amp; virtual hardisk of VMWare images
+Importing it into VMWare and started booting it, we will face the login prompt with absolutely no idea of login credentials
+The only way to bypass this is to use a small trick on <code v-pre>GRUB</code> to spawn <code v-pre>root shell</code>
+Changing <code v-pre>ro ...</code> in GRUB to <code v-pre>rw init=/bin/bash</code> and loading it will give us a root level shell, where we can use <code v-pre>passwd</code> command to change password for <code v-pre>root</code> user
+For detailed <a href="https://www.layerstack.com/resources/tutorials/Resetting-root-password-for-Linux-Cloud-Servers-by-booting-into-Single-User-Mode">blog</a>
+After gaining shell, we can see a user named <code v-pre>liikt</code></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-c"><code v-pre class="language-c">┌──(root💀kali)-[~]
+└─# id
+uid=0(root) gid=0(root) groups=0(root),4(adm),20(dialout),119(wireshark),142(kaboxer)
+                                                                                                                                                                                                                                           
+┌──(root💀kali)-[~]
+└─# hostname
+kali
+                                                                                                                                                                                                                                           
+┌──(root💀kali)-[~]
+└─# ls /home 
+kali  liikt</code></pre>
+</doc-codeblock></div>
+<p>Lets find the string <code v-pre>flag1:&lt;-- START 1337UP{5530491e6c0b5159</code> with filename, which we found earlier in memory</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-c"><code v-pre class="language-c">┌──(root💀kali)-[~]
+└─# grep -H -r &quot;1337UP{&quot; /  2&gt;/dev/null
+/etc/passwd:flag1:&lt;-- START 1337UP{5530491e6c0b5159
+^C
+                                                                                                                                                                                                                                           
+┌──(root💀kali)-[~]
+└─# tail /etc/passwd                                                                                                                                                                                                                 
+saned:x:128:135::/var/lib/saned:/usr/sbin/nologin
+inetsim:x:129:137::/var/lib/inetsim:/usr/sbin/nologin
+lightdm:x:130:138:Light Display Manager:/var/lib/lightdm:/bin/false
+colord:x:131:139:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:132:140::/var/lib/geoclue:/usr/sbin/nologin
+king-phisher:x:133:141::/var/lib/king-phisher:/usr/sbin/nologin
+kali:x:1000:1000:Kali,,,:/home/kali:/usr/bin/zsh
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+liikt:x:1001:1001:,,,:/home/liikt:/bin/bash
+flag1:&lt;-- START 1337UP{5530491e6c0b5159</code></pre>
+</doc-codeblock></div>
+<p>Now we have to find the second part of the flag
+After some enumeration</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-c"><code v-pre class="language-c">┌──(root💀kali)-[~]
+└─# cd /home/liikt/
+                                                                                                                                                                                                                                           
+┌──(root💀kali)-[/home/liikt]
+└─# ls
+Desktop  Documents  Downloads  Music  Pictures  Public  pwned.txt  Templates  Videos
+                                                                                                                                                                                                                                           
+┌──(root💀kali)-[/home/liikt]
+└─# cat pwned.txt  
+Here lies the list of systems with poor security and what I have on them (Just so I don't forget):
+0.0.0.0 (backdoor with liikytongue)
+8.8.8.8 (backdoor with liikt)
+127.0.0.1 (backdoor with real_root)
+blacknote.ctf.intigriti.io (backdoor with blackn0te)
+yeeter.thisisnotrealsite.com (data dump)
+footbook.thisisnotrealsite.com(data dump)</code></pre>
+</doc-codeblock></div>
+<p>Seems like we have to find some creds for backdoor/ data dump
+While enumerating I saw <code v-pre>MySQL</code> and <code v-pre>Postgres</code> installed in this machine
+My thought is to give a try on those
+After starting <code v-pre>MySQL service</code>,</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-c"><code v-pre class="language-c">┌──(root💀kali)-[/home/liikt]
+└─# mysql -u root
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/run/mysqld/mysqld.sock' (2)
+                                                                                                                                                                                                                                           
+┌──(root💀kali)-[/home/liikt]
+└─#  sudo service mysqld start                                                                                                                                                                                                  
+                                                                                                                                                                                                                                           
+┌──(root💀kali)-[/home/liikt]
+└─# mysql -u root             
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 30
+Server version: 10.5.12-MariaDB-1 Debian 11
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+MariaDB [(none)]&gt; </code></pre>
+</doc-codeblock></div>
+<p>Lets enumerate it further,</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-c"><code v-pre class="language-c">MariaDB [(none)]&gt; show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| yeeter_dump        |
++--------------------+
+4 rows in set (0.000 sec)
+MariaDB [(none)]&gt; use yeeter_dump;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+Database changed
+MariaDB [yeeter_dump]&gt; show tables;
++-----------------------+
+| Tables_in_yeeter_dump |
++-----------------------+
+| creds                 |
++-----------------------+
+1 row in set (0.000 sec)
+MariaDB [yeeter_dump]&gt; select * from creds;
++----------------------------------+---------------------------------+
+| email                            | password                        |
++----------------------------------+---------------------------------+
+| peter@email.com                  | Lowstreet4                      |
+| amy@fake.com                     | Applest652                      |
+| hannah@loser.net                 | Mountain21!#13$f                |
+| michael54@lousymail.com          | Valley345$fs                    |
+| sandy@spongebob.com              | Oceanblvd2                      |
+| betty@meme.com                   | GreenGrass1                     |
+| johnhammond@youtuber.com         | PlzSubscribe!#XD                |
+| followmytwitter@BlacknoteSec.com | BlacknoteSec                    |
+| liikt@hacker.com                 | best_h3ckerman!69-              |
+| peter_parker@avengers.com        | Sp00derm4n                      |
+| thor@asgard.com                  | StrongestAvenger1               |
+| pink@draconian.com               | MainRoad989                     |
+| viola@email.com                  | ViolaPlaysViolin00              |
+| uanikolayf@gmailya.com           | qwertyuiop                      |
+| willing@mail.com                 | SF4ss4fds56                     |
+| sdfdslike@mail.com               | Password01                      |
+| pinkdraconian@youtuber.com       | IntigritiRockz6969_             |
+| perfect@blue.com                 | dizCTF2ez!                      |
+| matt_e@dev.com                   | Pwn2Ez4m3                       |
+| fumenoid@dev.com                 | I4mJust4N00b                    |
+| congon4tor@dev.com               | webm3up!                        |
+| lorem@ipsumdolor.sit             | amet!consectetur                |
+| qwerty@qwerty.com                | asdfghjkl1234                   |
+| thegamer@games.com               | wtfgames!$                      |
+| justemail@random.com             | fhcnawisg456                    |
+| whateberafsd@asdf.com            | bjhgawf243                      |
+| igiveup@mails.com                | randomasd                       |
+| afdasdf.mail.com                 | kjhgfwff123                     |
+| hjsadf@asd.com                   | nbxvcsduycg                     |
+| sinister_matrix@coolguy.com      | jbhaf#jyavnw54                  |
+| pwnfunction@youtuber.com         | hackercamp.co                   |
+| optional@ctf.com                 | I4amJust4Ch4d                   |
+| badboy17@byteforce.com           | h4xl33terrrrrr45                |
+| streaker_rules@byteforce.com     | cryptog0d6969                   |
+| lucas@byteforce.com              | lukeflima69                     |
+| szymex73@ctf.com                 | justanothern00b                 |
+| calebjstewart@dev.com            | UsePwnCat                       |
+| ashok_b_simping@mlp.com          | IAmAcl0wn69                     |
+| d0minik@mlp.com                  | polarbears4recute137            |
+| smellycharlie@oldman.com         | ageisjustanumber!#$             |
+| liveoverflow@youtuber.com        | isthereanyoneelsebetter?!       |
+| kevinmitnick@oldschool.com       | legend                          |
+| ippsec@youtube.com               | whatsgoingonyoutubethisisippsec |
+| sfsd@sgsg.com                    | asdfasdfkjhg2354                |
+| jhgaf@nbasaf.com                 | hbadjegf546                     |
+| bjhacwg@afsjhgkwsjf.com          | ajhfskgseuf                     |
+| nbmygf@sajh.com                  | bvjhhgf                         |
+| postmalone@music.com             | makingApostRequest              |
+| lame@lame.com                    | sadfgsf                         |
+| whateven@what.com                | wgfasgb                         |
++----------------------------------+---------------------------------+
+50 rows in set (0.001 sec)
+MariaDB [yeeter_dump]&gt; </code></pre>
+</doc-codeblock></div>
+<p>Seems like login creds, but for why
+From the hint of <code v-pre>pwned.txt</code> we can see theres a legit hostname <code v-pre>blacknote.ctf.intigriti.io</code>
+Because, the CTF was hosted on <code v-pre>ctf.intigriti.io</code>, it was merely a subdomain
+Scanning this hostname with <code v-pre>nmap</code>,</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-c"><code v-pre class="language-c">┌──(root💀kali)-[/home/liikt]
+└─# nmap blacknote.ctf.intigriti.io -sC -A -sV
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-12 13:13 EST
+Nmap scan report for blacknote.ctf.intigriti.io (34.76.107.214)
+Host is up (0.035s latency).
+rDNS record for 34.76.107.214: 214.107.76.34.bc.googleusercontent.com
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 23:7b:2b:00:c4:18:cf:a4:2e:a5:1b:19:e5:97:71:c9 (RSA)
+|   256 1c:f7:37:b1:75:95:7d:3f:88:eb:47:94:c4:35:cf:56 (ECDSA)
+|_  256 6f:4e:1d:84:73:d7:42:4b:e1:04:54:04:56:ae:c8:9e (ED25519)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|general purpose
+Running: Actiontec embedded, Linux 2.4.X|3.X, Microsoft Windows XP|7|2012
+OS CPE: cpe:/h:actiontec:mi424wr-gen3i cpe:/o:linux:linux_kernel cpe:/o:linux:linux_kernel:2.4.37 cpe:/o:linux:linux_kernel:3.2 cpe:/o:microsoft:windows_xp::sp3 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_server_2012
+OS details: Actiontec MI424WR-GEN3I WAP, DD-WRT v24-sp2 (Linux 2.4.37), Linux 3.2, Microsoft Windows XP SP3, Microsoft Windows XP SP3 or Windows 7 or Windows Server 2012
+Network Distance: 2 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   0.14 ms 192.168.116.2
+2   0.16 ms 214.107.76.34.bc.googleusercontent.com (34.76.107.214)
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 131.02 seconds</code></pre>
+</doc-codeblock></div>
+<p>Seems like <code v-pre>SSH</code> is open
+And from <code v-pre>pwned.txt</code> the hint says, <code v-pre>backdoor with blackn0te</code>
+Lets assume the username is <code v-pre>blackn0te</code>
+And from the dumped creds, <code v-pre>liikt@hacker.com:best_h3ckerman!69-</code> matches the description
+While connecting with <code v-pre>ssh</code>, it prompts for <code v-pre>id_rsa</code> password,</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-c"><code v-pre class="language-c">┌──(root💀kali)-[~/.ssh]
+└─# ssh blackn0te@blacknote.ctf.intigriti.io
+Enter passphrase for key '/root/.ssh/id_rsa': </code></pre>
+</doc-codeblock></div>
+<p>Lets use john to crack it,</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-c"><code v-pre class="language-c">┌──(root💀kali)-[~/.ssh]
+└─# ls
+hash_ssh  id_rsa  id_rsa.pub  known_hosts  known_hosts.old  pass.txt
+                                                                                                                                                                                                                                           
+┌──(root💀kali)-[~/.ssh]
+└─# /usr/share/john/ssh2john.py id_rsa &gt; hash_ssh
+──(root💀kali)-[~/.ssh]
+└─# john hash_ssh --wordlist=pass.txt   
+Using default input encoding: UTF-8
+Loaded 1 password hash (SSH, SSH private key [RSA/DSA/EC/OPENSSH 32/32])
+Cost 1 (KDF/cipher [0=MD5/AES 1=MD5/3DES 2=Bcrypt/AES]) is 2 for all loaded hashes
+Cost 2 (iteration count) is 16 for all loaded hashes
+Will run 4 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+Warning: Only 1 candidate left, minimum 4 needed for performance.
+best_h3ckerman!69- (id_rsa)     
+1g 0:00:00:00 DONE (2022-03-12 13:40) 2.325g/s 2.325p/s 2.325c/s 2.325C/s best_h3ckerman!69-
+Use the &quot;--show&quot; option to display all of the cracked passwords reliably
+Session completed. </code></pre>
+</doc-codeblock></div>
+<p>It is confirmed that the password for <code v-pre>id_rsa</code> is <code v-pre>best_h3ckerman!69-</code>
+Lets use SSH to gain access</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-c"><code v-pre class="language-c">┌──(root💀kali)-[~/.ssh]
+└─# ssh blackn0te@blacknote.ctf.intigriti.io
+Enter passphrase for key '/root/.ssh/id_rsa': 
+Welcome to Ubuntu 20.04.4 LTS (GNU/Linux 5.4.144+ x86_64)
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+To restore this content, you can run the 'unminimize' command.
+Last login: Sat Mar 12 18:28:34 2022 from 10.10.0.16
+$ id
+uid=1000(blackn0te) gid=1000(blackn0te) groups=1000(blackn0te)
+$ hostname
+misc-liikt1337-db9d484b9-6b7bf
+$ ls
+flag2.txt  notes.txt  write_anything
+$ cat flag2.txt
+ff82f00c4e57d0bb} --&gt; END
+$ </code></pre>
+</doc-codeblock></div>
+<p>So the final flag is <code v-pre>1337UP{5530491e6c0b5159ff82f00c4e57d0bb}</code></p>
+
+                                <div class="flex items-center mt-6 mb-6 clear-both">
+                                    <span>
+                                        <a href="../../../tags/">
+                                            <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
+                                        </a>
+                                        <span class="mr-2"><a href="../../../tags/misc/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>misc</span>
+                                </a></span>
+                                    </span>
+                                </div>
+                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results />
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../ctftime-writeups/1337up---intigrity/admin/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Getting admin access</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../ctftime-writeups/1337up---intigrity/mirage/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Mirage</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© TamilCTF 2023.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script>window.__DOCS__ = { "title": "Liikt#1337", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
+</body>
+</html>
