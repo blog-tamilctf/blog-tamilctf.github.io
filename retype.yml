@@ -1,0 +1,25 @@
+input: .
+output: .retype
+favicon: ./assets/img/logo.png
+url: https://blogs.tamilctf.com
+branding:
+  title: TamilCTF
+  label: Blogs
+  logo: ./assets/img/logo.png
+
+links:
+- text: Members
+  link: /members/
+  icon: people
+
+- text: Sessions
+  link: /sessions/
+  icon: video
+
+footer:
+  copyright: "&copy; TamilCTF {{ year }}."
+snippets:
+  lineNumbers:
+    - js
+    - rs
+    - py
