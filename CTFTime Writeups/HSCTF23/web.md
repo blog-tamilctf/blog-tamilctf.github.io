@@ -6,7 +6,7 @@ categories: [HSCTF]
 tags: [web]
 ---
 
-# HSCTF-2023 challenge writeup
+# HSCTF-2023 writeups
 
 Category - WEB
 
