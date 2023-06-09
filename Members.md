@@ -1,5 +1,5 @@
 ---
-title: Our Core Team
+title: Core Team
 layout: page
 excerpt: TamilCTF team
 ---
