@@ -6,6 +6,8 @@ categories: [HSCTF]
 tags: [web]
 ---
 
+![](/assets/img/HSCTF_Logo.png)
+
 # HSCTF-2023 writeups
 
 Category - WEB
