@@ -10,7 +10,7 @@ tags: [sqli,ssrf]
 
 <img src="https://github.com/blog-tamilctf/blog-tamilctf.github.io/blob/main/assets/img/1.jpeg?raw=true" height=400px>
 
-- Challenge source file : https://github.com/kabilan1290/WebCTF/blob/master/HTB2024/BlueprintHeist/web_blueprint_heist.zip
+- [Challenge source file](https://github.com/kabilan1290/WebCTF/blob/master/HTB2024/BlueprintHeist/web_blueprint_heist.zip)
 
 ### Initial Analysis:
 
@@ -529,7 +529,7 @@ Content-Length: 89
 url=http://0.0.0.0:1337/graphql?query={getDataByName(name:"John\n '"){name%20department%20isPresent}}%26token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJyZXF1aXJlZFJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNjIxMjM3M30.Cf49E4-_dHEoTBfMfplbKikF1ns-LDjWR5ftHG-9bfk
 ```
 
-<img src="https://github.com/blog-tamilctf/blog-tamilctf.github.io/blob/main/assets/img/nl.jpg?raw=true">
+<img src="https://github.com/blog-tamilctf/blog-tamilctf.github.io/blob/main/assets/img/sql.jpg?raw=true">
 
 - We got through this ! now we need to somehow escalate this sqli to read the flag.
 - The flag.txt was compiled as a binary named `/readflag`
