@@ -2,7 +2,7 @@
 title: Blueprint Heist
 author: 0xgameov3r
 date: 2024-05-23
-categories: [web]
+categories: [HSCTF]
 tags: [sqli,ssrf]
 ---
 
