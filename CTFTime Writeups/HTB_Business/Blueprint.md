@@ -1,4 +1,4 @@
-![image](https://github.com/blog-tamilctf/blog-tamilctf.github.io/assets/56404692/c2bf24f1-51a8-498b-b795-22f3d9cb67d5)---
+---
 title: Blueprint Heist
 author: 0xgame0v3r
 date: 2024-05-23
