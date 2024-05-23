@@ -1,4 +1,4 @@
----
+![image](https://github.com/blog-tamilctf/blog-tamilctf.github.io/assets/56404692/c2bf24f1-51a8-498b-b795-22f3d9cb67d5)---
 title: Blueprint Heist
 author: 0xgame0v3r
 date: 2024-05-23
@@ -252,7 +252,7 @@ secret=IM_Sup3r_K3y_pl3ase_b3_c4r3ful?
 
 - Trying multiple things for a while,then i thought of verifying the guest token locally with the secret ! IT FAILEDDDDD! 
 
-<img/src="node.jpeg"></img>
+<img src="https://github.com/blog-tamilctf/blog-tamilctf.github.io/blob/main/assets/img/node.jpeg?raw=true">
 
 - It was not the legit secret ! ahhh getting back to my old progress.
 
