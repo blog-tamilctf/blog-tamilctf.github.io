@@ -1,9 +1,9 @@
 ---
 title: Blueprint Heist
-author: 0xgameov3r
+author: 0xgame0v3r
 date: 2024-05-23
 categories: [HTB]
-tags: [sqli,ssrf]
+tags: [sqli,ssrf,graphql,jwt manipulation,ssti]
 ---
 
 ## Blueprint Heist
