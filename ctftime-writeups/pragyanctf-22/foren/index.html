@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.739604174916">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.769770699534">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.0.3">
+    <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
     <title>Forensics</title>
     <meta name="title" content="Forensics">
-    <meta name="description" content="Hy Friends , this time i played Pragyan CTF 2022 and my team scored 8th place. This CTF was pretty crazy." />
+    <meta name="description" content="Hy Friends , this time i played Pragyan CTF 2022 and my team scored 8th place. This CTF was pretty crazy.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://blogs.tamilctf.com/ctftime-writeups/pragyanctf-22/foren/" />
+    <link rel="canonical" href="https://blogs.tamilctf.com/ctftime-writeups/pragyanctf-22/foren/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -30,21 +30,21 @@
     <meta property="twitter:description" content="Hy Friends , this time i played Pragyan CTF 2022 and my team scored 8th place. This CTF was pretty crazy.">
     <meta property="twitter:image" content="https://i.imgur.com/TWH0aRe.png">
 
-    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+    <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../assets/img/logo.png" rel="icon" />
-    <link href="../../../resources/css/retype.css?v=3.0.3.739604174916" rel="stylesheet" />
+    <link href="../../../assets/img/logo.png" rel="icon">
+    <link href="../../../resources/css/retype.css?v=3.5.0.769770699534" rel="stylesheet">
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=3.0.3.739604174916" data-turbo-eval="false" defer></script>
-    <script type="text/javascript" src="../../../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=3.0.3.739604174916" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.769770699534" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.769770699534" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
         <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
     
         <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
-            <div class="container relative flex items-center justify-between grow pr-6 md:justify-start">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
                 <!-- Mobile menu button skeleton -->
                 <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
                 <div v-cloak id="docs-sidebar-toggle"></div>
@@ -98,24 +98,22 @@
                         <!-- Search input mock -->
                         <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
                             <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
                             </div>
-        
-                            <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
-                            style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search" />
+                            <input class="w-full h-10 placeholder-gray-400 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 dark:placeholder-dark-400" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
                         </div>
         
-                        <!-- Mobile search button mock -->
+                        <!-- Mobile search button -->
                         <div class="flex items-center justify-center w-10 h-10 lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
                         </div>
         
-                        <!-- Dark mode switch placehokder -->
+                        <!-- Dark mode switch placeholder -->
                         <div class="w-10 h-10 lg:ml-2"></div>
         
-                        <!-- History button mock -->
+                        <!-- History button -->
                         <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
                         </div>
                     </div>
         
@@ -136,10 +134,10 @@
             
                 <!-- Render this div, if config.showSidebarFilter is `true` -->
                 <div class="flex items-center h-16 px-6">
-                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
                 </div>
             
-                <div class="pl-6 mb-4 mt-1">
+                <div class="pl-6 mt-1 mb-4">
                     <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
                     <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
                     <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
@@ -205,7 +203,6 @@
                             <div class="docs-markdown" id="docs-content">
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
-                
                                 <!-- Page content  -->
 <doc-anchor-target id="forensics" class="break-words">
     <h1>
@@ -243,9 +240,9 @@
         <span>Ye Olde Threat</span>
     </h3>
 </doc-anchor-target>
-<hr />
+<hr>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/TWH0aRe.png" alt="" />
+    <img src="https://i.imgur.com/TWH0aRe.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -254,44 +251,44 @@
 <p>It gives a zip file named intel.zip and inside it have a PNG image.</p>
 <p>Tried to open the image but gave error , So it must be corrupted. Open it in hexeditor.</p>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/yQhVNiD.png" alt="" />
+    <img src="https://i.imgur.com/yQhVNiD.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>We can see the PNG header is missing also IHDR isn’t correct , IDAT also named as Ida7.</p>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/uvJXsUg.png" alt="" />
+    <img src="https://i.imgur.com/uvJXsUg.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>After fixing those we get a half-earth image.</p>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/pLEsIPb.png" alt="" />
+    <img src="https://i.imgur.com/pLEsIPb.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Check the image with pngcheck, <code v-pre>pngcheck -v Just_A_Plane_Image.png</code>.</p>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/OeZUis4.png" alt="" />
+    <img src="https://i.imgur.com/OeZUis4.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Here the length of second IDAT is really weird, Its over the size of the png file itself.</p>
 <p>Search the second IDAT and set the length value to <code v-pre>00 00 20 00</code> which is 8192 bytes , same as previous IDAT chunk.</p>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/RYcgSCp.png" alt="" />
+    <img src="https://i.imgur.com/RYcgSCp.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Now once again do pngcheck, this time it shows CRC error.</p>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/aKiyNUg.png" alt="" />
+    <img src="https://i.imgur.com/aKiyNUg.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Fix the CRC using <a href="https://github.com/sherlly/PCRT">PCR tool</a>, <code v-pre>python2 PCRT.py -v -i Just_A_Plane_Image.png</code> and open the output.png in stegsolve.</p>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/waA568V.png" alt="" />
+    <img src="https://i.imgur.com/waA568V.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -302,9 +299,9 @@
         <span>Frank’s Little Beauty</span>
     </h3>
 </doc-anchor-target>
-<hr />
+<hr>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/eJfrkJa.png" alt="" />
+    <img src="https://i.imgur.com/eJfrkJa.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -332,7 +329,7 @@ Command line : &quot;C:\Program Files\WinRAR\WinRAR.exe&quot;  e comp.rar</code>
 <p><code v-pre>vol -f MemDump.DMP --profile=Win7SP1x64 dumpfiles -D . -Q 0x000000003df4e450</code></p>
 <p>Its a password protected rar file , extract the file using <code v-pre>trolltoll</code> as password. It gives a image file which have 2nd part of the flag.</p>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/AyFPdOh.png" alt="" />
+    <img src="https://i.imgur.com/AyFPdOh.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -351,7 +348,7 @@ s\Minesweeper\sysinfo.txt</code></pre>
 <p>Notepad uses UTF-16 to store texts , so grep through the memdump of notepad.</p>
 <p><code v-pre>strings -e l 3016.dmp | less</code></p>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/CTehsYB.png" alt="" />
+    <img src="https://i.imgur.com/CTehsYB.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -363,16 +360,16 @@ s\Minesweeper\sysinfo.txt</code></pre>
         <span>Marcel and the iPad</span>
     </h3>
 </doc-anchor-target>
-<hr />
+<hr>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/dNja05a.png" alt="" />
+    <img src="https://i.imgur.com/dNja05a.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>This challenge is similar to <a href="https://niekdang.wordpress.com/2020/07/31/ctflearn-solution-bobby-toes-ipad/amp/">Bobby toes iPad</a>. Googling is really useful :).</p>
 <p>Stegsolve the marcel.png.</p>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/FMHS9O6.png" alt="" />
+    <img src="https://i.imgur.com/FMHS9O6.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -388,16 +385,16 @@ s\Minesweeper\sysinfo.txt</code></pre>
         <span>Hidden and Protected</span>
     </h3>
 </doc-anchor-target>
-<hr />
+<hr>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/EOGbmQV.png" alt="" />
+    <img src="https://i.imgur.com/EOGbmQV.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>The description don’t have much suspicious info , although the title is interesting.</p>
 <p>Firstly do binwalk.</p>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/PCRc0nw.png" alt="" />
+    <img src="https://i.imgur.com/PCRc0nw.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -408,7 +405,7 @@ s\Minesweeper\sysinfo.txt</code></pre>
 <p>Using <a href="https://github.com/RickdeJager/stegseek">stegseek</a> crack the stegofile.</p>
 <p><code v-pre>stegseek image2.jpg /usr/share/wordlists/rockyou.txt</code></p>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/vpOTnXG.png" alt="" />
+    <img src="https://i.imgur.com/vpOTnXG.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -418,9 +415,9 @@ s\Minesweeper\sysinfo.txt</code></pre>
         <span>Zipped scandal</span>
     </h3>
 </doc-anchor-target>
-<hr />
+<hr>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/kbZXgVB.png" alt="" />
+    <img src="https://i.imgur.com/kbZXgVB.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -445,7 +442,7 @@ for i in up:
 <p>Final.zip is password protected. Looking at exif of the image , we get a hash in comment section and GPS coordinates.</p>
 <p>Cracking hash using crackstation gives <code v-pre>SHA256</code>. Next is to find the Location <code v-pre>36°20' 21.49&quot; N, 96°48' 10.32&quot; W</code>. Paste the location cords in Google Map.</p>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/tMtmfWZ.png" alt="" />
+    <img src="https://i.imgur.com/tMtmfWZ.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -453,13 +450,13 @@ for i in up:
 <p>Tried this as password to extract Final.zip , but no success. So connect SHA256 with this result , that is <code v-pre>Hash the location name in sha256</code>.</p>
 <p>Thats the password , then it gives a black image.</p>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/msyNY4V.png" alt="" />
+    <img src="https://i.imgur.com/msyNY4V.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Change its bit plane and it gives a QR with black background and white foreground. Its still not good , so invert the color to make it normal QR Code.</p>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/jWZNdsD.png" alt="" />
+    <img src="https://i.imgur.com/jWZNdsD.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -473,7 +470,7 @@ for i in up:
 <li><a href="https://mp3cut.net/reverse-audio">Reverse Audio Online</a></li>
 </ul>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/N75joYL.png" alt="" />
+    <img src="https://i.imgur.com/N75joYL.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -484,14 +481,14 @@ for i in up:
                                         <a href="../../../tags/">
                                             <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
                                         </a>
-                                        <span class="mr-2"><a href="../../../tags/forensics/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                        <span class="mr-2"><a href="../../../tags/forensics/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
                                     <span>forensics</span>
                                 </a></span>
                                     </span>
                                 </div>
                 
                                 <!-- Required only on API pages -->
-                                <doc-toolbar-member-filter-no-results />
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
                             </div>
                             <footer class="clear-both">
                             
@@ -525,7 +522,7 @@ for i in up:
                                     <ul class="flex flex-wrap items-center text-sm">
                                     </ul>
                                 </div>
-                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© TamilCTF 2023.</p></div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© TamilCTF 2024.</p></div>
                             </footer>
                         </div>
                     </div>
@@ -554,6 +551,6 @@ for i in up:
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Forensics", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Forensics", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
